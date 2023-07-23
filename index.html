@@ -8,10 +8,10 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link rel="icon" href="/images/favicon.png" />
+        <link rel="icon" href="/project/images/favicon.jpg" />
         <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
 <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
-<link rel="stylesheet" href="/css/fonts.min.css" />
+<link rel="stylesheet" href="/project/css/fonts.min.css" />
 <script> const mixins = {}; </script>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -23,20 +23,21 @@
     rel="stylesheet"
     href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
 />
-<script src="/js/lib/highlight.js"></script>
+<script src="/project/js/lib/highlight.js"></script>
 
 
 
-<script src="/js/lib/preview.js"></script>
+<script src="/project/js/lib/preview.js"></script>
 
 
 
 
 
-<script src="/js/lib/home.js"></script>
+<script src="/project/js/lib/home.js"></script>
 
-<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/project/css/main.css" />
 
+        <script src="https://kit.fontawesome.com/242216fcb6.js" crossorigin="anonymous"></script>
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body>
         <div id="layout">
@@ -45,22 +46,22 @@
                     <div id="loading-circle">
                         <h2>LOADING</h2>
                         <p>加载过慢请开启缓存 浏览器默认开启</p>
-                        <img src="/images/loading.gif" />
+                        <img src="/project/images/loading.gif" />
                     </div>
                 </div>
             </transition>
             <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
-        <a class="title" href="/">
+        <a class="title" href="/project/">
             <span>TAXUSLOR</span>
         </a>
         
-        <a href="/">
+        <a href="/project/">
             <i class="fa-solid fa-house fa-fw"></i>
             <span>&ensp;Home</span>
         </a>
         
-        <a href="/archives">
+        <a href="/project/archives">
             <i class="fa-solid fa-box-archive fa-fw"></i>
             <span>&ensp;Archives</span>
         </a>
@@ -74,7 +75,7 @@
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
                 
-                <a href="/">
+                <a href="/project/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-house fa-fw"></i>
@@ -83,7 +84,7 @@
                     </div>
                 </a>
                 
-                <a href="/archives">
+                <a href="/project/archives">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-box-archive fa-fw"></i>
@@ -102,7 +103,7 @@
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background.jpg"></div>
+    <div id="home-background" ref="homeBackground" data-images="/project/images/background.jpg"></div>
     <div id="home-info" @click="homeClick">
         <span class="loop"></span>
         <span class="loop"></span>
@@ -122,7 +123,7 @@
         
 
 <div class="post">
-    <a href="/2023/07/23/WeDidntStartTheFire/">
+    <a href="/project/2023/07/23/WeDidntStartTheFire/">
         <h2 class="post-title">WeDidntStartTheFire</h2>
     </a>
     <div class="category-and-date">
@@ -148,11 +149,11 @@
         
         
     </div>
-    <a href="/2023/07/23/WeDidntStartTheFire/" class="go-post">阅读全文</a>
+    <a href="/project/2023/07/23/WeDidntStartTheFire/" class="go-post">阅读全文</a>
 </div>
 
 <div class="post">
-    <a href="/2023/07/23/hello-world/">
+    <a href="/project/2023/07/23/hello-world/">
         <h2 class="post-title">Hello World</h2>
     </a>
     <div class="category-and-date">
@@ -190,7 +191,7 @@
         
         
     </div>
-    <a href="/2023/07/23/hello-world/" class="go-post">阅读全文</a>
+    <a href="/project/2023/07/23/hello-world/" class="go-post">阅读全文</a>
 </div>
 
 
@@ -214,7 +215,7 @@
         <div id="card-style">
     <div id="card-div">
         <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
+            <img src="/project/images/avatar.jpg" alt="avatar" />
         </div>
         <div class="name">taxuslor</div>
         <div class="description">
@@ -222,10 +223,25 @@
 
         </div>
         
+            <div class="icon-links">
+                
+                  <span class="icon-link">
+                    <a target="_blank" rel="noopener" href="https://github.com/taxuslor">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                  </span>
+                
+                  <span class="icon-link">
+                    <a target="_blank" rel="noopener" href="https://twitter.com/taxuslor">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </span>
+                
+              </div> 
+        
         
     </div>
 </div>
-
     </div>
     
 </div>
@@ -257,7 +273,7 @@
             </transition>
             
         </div>
-        <script src="/js/main.js"></script>
+        <script src='/project/js/main.js'></script>
         
     </body>
 </html>
