@@ -3,7 +3,7 @@
 <html lang="cn">
     <head>
         <meta charset="utf-8" />
-        <title>记谱法 | taxuslorの日日新</title>
+        <title>MarkdownOverview | taxuslorの日日新</title>
         <meta name="author" content="taxuslor" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -120,14 +120,14 @@
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
                 <div class="article">
     <div>
-        <h1>记谱法</h1>
+        <h1>MarkdownOverview</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2023/7/26
+            2023/8/6
         </span>
         
         
@@ -138,7 +138,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #03a9f4">基本乐理</a>
+                <a href="/tags/tips/" style="color: #03a9f4">tips</a>
             </span>
             
         </span>
@@ -146,33 +146,133 @@
     </div>
     
     <div class="content" v-pre>
-        <h1 id="记谱法"><a href="#记谱法" class="headerlink" title="记谱法"></a>记谱法</h1><h2 id="音符与休止符"><a href="#音符与休止符" class="headerlink" title="音符与休止符"></a>音符与休止符</h2><ul>
-<li>可参考 <a target="_blank" rel="noopener" href="https://www.tedvieira.com/onlinelessons/sightreading101/values/values.html"><strong>Sight Reading 101 Notes and Rest Values</strong></a></li>
+        <h1 id="Markdown-Overview-Markdown-语法速览"><a href="#Markdown-Overview-Markdown-语法速览" class="headerlink" title="Markdown Overview(Markdown 语法速览)"></a>Markdown Overview(Markdown 语法速览)</h1><ul>
+<li>This article only includes basic syntax, you can learn more at <a target="_blank" rel="noopener" href="https://www.markdownguide.org/">The Markdown Guide</a><br>本篇只涉及基础语法，进阶语法详见<a target="_blank" rel="noopener" href="https://www.markdownguide.org/">The Markdown Guide</a></li>
 </ul>
-<h2 id="音符的写法"><a href="#音符的写法" class="headerlink" title="音符的写法"></a>音符的写法</h2><ul>
-<li>音符包括三个组成部分：符头（空心的或实心的椭圆形标记）、符干（垂直的短线）和符尾（连在符干一端的旗状标记）</li>
-<li>音符的符头可以记在五线谱的线上与间内。符头在五线谱上的位置愈高音音愈高。</li>
-<li>用单符干记谱，符头在第三线以上时，符干朝下，写在符头的左边；在第三线以下时，符干朝上，写在符头的右边；符头在第三线上，符干朝上朝下都可以，根据相邻的符干方向而定。符尾永远写在符干的右边并弯向符头。</li>
-<li>符干的长度一般应保持八度音程的距离</li>
-<li>附点写在音符符头和休止符右边的间内</li>
+<h2 id="Basic-Syntax-基础语法"><a href="#Basic-Syntax-基础语法" class="headerlink" title="Basic Syntax(基础语法)"></a>Basic Syntax(基础语法)</h2><hr>
+<h3 id="Heading-heading"><a href="#Heading-heading" class="headerlink" title="Heading: # heading"></a>Heading: # heading</h3><ul>
+<li>Syntax:</li>
 </ul>
-<h2 id="谱号"><a href="#谱号" class="headerlink" title="谱号"></a>谱号</h2><ul>
-<li>G谱号&#x2F;高音谱号（ <strong>𝄞</strong> ）： 表示小字一组的g</li>
-<li>F谱号&#x2F;低音谱号（ <strong>𝄢</strong> ）： 表示小字组的f</li>
-<li>C谱号（ <strong>𝄡</strong> ）：表示小字一组的c</li>
+<pre><code class="markdown"># hading1
+
+## heading2
+
+### heading3
+</code></pre>
+<ul>
+<li>Output:</li>
 </ul>
-<h2 id="增长音值的补充记号"><a href="#增长音值的补充记号" class="headerlink" title="增长音值的补充记号"></a>增长音值的补充记号</h2><ul>
-<li>附点：是记在符头右边的小圆点，带有一个附点的音符，增长原有音符时值的二分之一；带有两个附点的音符，增长原有音符时值的四分之三</li>
-<li>延音线：用在音高相同的两个或两个以上的音符上时，表示它们要唱成一个音，它的长度等于这些音符的总和</li>
-<li>延长号：在单声部乐曲中它卸载音符和休止符的上面，表示按作品的风格、演奏者的意图可自由地增长音符和休止符的时值；记在小节线上表示小节之间的片刻休止；记在双纵线上表示乐曲的结束和告一段落。</li>
+<h1 id="heading1"><a href="#heading1" class="headerlink" title="heading1"></a>heading1</h1><h2 id="heading2"><a href="#heading2" class="headerlink" title="heading2"></a>heading2</h2><h3 id="heading3"><a href="#heading3" class="headerlink" title="heading3"></a>heading3</h3><hr>
+<h3 id="Bold-bold-text"><a href="#Bold-bold-text" class="headerlink" title="Bold: ** bold text **"></a>Bold: ** bold text **</h3><ul>
+<li>Syntax:</li>
 </ul>
-<h2 id="变音记号"><a href="#变音记号" class="headerlink" title="变音记号"></a>变音记号</h2><ul>
-<li>升记号（ <strong>#</strong> ）：将基本音级升高半音</li>
-<li>降记号（ <strong>b</strong> ）：将基本音级降低半音</li>
-<li>重升记号（ <strong>x</strong> ）：将基本音级升高全音</li>
-<li>重降记号（ <strong>bb</strong> ）：将基本音级降低全音</li>
-<li>还原记号（ <strong>♮</strong> ）：表示将已经升高或降低的音还原</li>
+<pre><code class="markdown">This is the original text
+
+**This is the text in bold**
+</code></pre>
+<ul>
+<li>Output:<br>This is the original text<br><strong>This is the text in bold</strong></li>
 </ul>
+<hr>
+<h3 id="Italicized-italicized-text"><a href="#Italicized-italicized-text" class="headerlink" title="Italicized: * italicized text *"></a>Italicized: * italicized text *</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">This is the original text
+
+*This is the text in italics*
+</code></pre>
+<ul>
+<li>Output:<br>This is the original text<br><em>This is the text in italics</em></li>
+</ul>
+<hr>
+<h3 id="Blockquote-blockquote"><a href="#Blockquote-blockquote" class="headerlink" title="Blockquote: &gt; blockquote"></a>Blockquote: &gt; blockquote</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">&gt; “In memory yet green, in joy still felt,
+The scenes of life rise sharply into view.
+We triumph; Life&#39;s disasters are undealt,
+And while all else is old, the world is new.”
+
+&gt; \- Isaac Asimov
+</code></pre>
+<ul>
+<li>Output:</li>
+</ul>
+<blockquote>
+<p>“In memory yet green, in joy still felt,<br>The scenes of life rise sharply into view.<br>We triumph; Life’s disasters are undealt,<br>And while all else is old, the world is new.”</p>
+<p>- Isaac Asimov</p>
+</blockquote>
+<hr>
+<h3 id="Ordered-List-1-first"><a href="#Ordered-List-1-first" class="headerlink" title="Ordered List: 1.first"></a>Ordered List: 1.first</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">1. whoo, i am the first one
+
+2. then i am the second one
+
+3. all right, i am the last one
+</code></pre>
+<ul>
+<li>Output:</li>
+</ul>
+<ol>
+<li>i am the first one</li>
+<li>then i am the second</li>
+<li>all right, i am the third</li>
+</ol>
+<hr>
+<h3 id="Unordered-List-First"><a href="#Unordered-List-First" class="headerlink" title="Unordered List: - First"></a>Unordered List: - First</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">- whoo, i am the first one
+
+- then i am the second one
+
+- hey, we&#39;re unordered!
+</code></pre>
+<ul>
+<li>Output:<ul>
+<li>whoo, i am the first one</li>
+<li>then i am the second one</li>
+<li>hey, we’re unordered!</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Horizontal-Rules-—"><a href="#Horizontal-Rules-—" class="headerlink" title="Horizontal Rules: *** &#x2F; — &#x2F; ___"></a>Horizontal Rules: *** &#x2F; — &#x2F; ___</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">***
+
+---
+
+___
+</code></pre>
+<ul>
+<li>Output:</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<hr>
+<h3 id="Link-title-https-www-example-com"><a href="#Link-title-https-www-example-com" class="headerlink" title="Link: [title](https://www.example.com)"></a>Link: [title](<a target="_blank" rel="noopener" href="https://www.example.com/">https://www.example.com</a>)</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">My favorite website is [taxuslorの日日新](https://taxuslor.github.io/).
+</code></pre>
+<ul>
+<li>Output:<br>My favorite website is <a href="https://taxuslor.github.io/">taxuslorの日日新</a>.</li>
+</ul>
+<hr>
+<h3 id="Images-alt-text-image-jpg"><a href="#Images-alt-text-image-jpg" class="headerlink" title="Images: ![alt text](image.jpg)"></a>Images: ![alt text](image.jpg)</h3><ul>
+<li>Syntax:</li>
+</ul>
+<pre><code class="markdown">![This is my avatar](Markdown-Overview_avatar.jpg)
+</code></pre>
+<ul>
+<li>Output:</li>
+</ul>
+<p><img src="/2023/08/06/MarkdownOverview/Markdown-Overview_avatar.jpg" alt="This is my avatar"></p>
 
     </div>
     
