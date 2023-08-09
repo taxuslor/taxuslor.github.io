@@ -17,14 +17,6 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
 
-<script src="https://cdn.staticfile.org/highlight.js/11.8.0/highlight.min.js"></script>
-<script src="https://cdn.staticfile.org/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
-<link
-    rel="stylesheet"
-    href="https://cdn.staticfile.org/highlight.js/11.8.0/styles/github.min.css"
-/>
-<script src="/js/lib/highlight.js"></script>
-
 
 
 <script src="/js/lib/preview.js"></script>
@@ -61,12 +53,7 @@
             <span>&ensp;Home</span>
         </a>
         
-        <a href="/archives">
-            <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
-        </a>
-        
-        <a href="/tags">
+        <a href="/tags/milestore/">
             <i class="fa-solid fa-tags fa-fw"></i>
             <span>&ensp;Tags</span>
         </a>
@@ -89,16 +76,7 @@
                     </div>
                 </a>
                 
-                <a href="/archives">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-box-archive fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
-                    </div>
-                </a>
-                
-                <a href="/tags">
+                <a href="/tags/milestore/">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
                             <i class="fa-solid fa-tags fa-fw"></i>
@@ -161,12 +139,8 @@
 <h3 id="Heading-heading"><a href="#Heading-heading" class="headerlink" title="Heading: # heading"></a>Heading: # heading</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown"># hading1
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># hading1</span></span><br><span class="line"><span class="section">## heading2</span></span><br><span class="line"><span class="section">### heading3</span></span><br></pre></td></tr></table></figure>
 
-## heading2
-
-### heading3
-</code></pre>
 <ul>
 <li>Output:</li>
 </ul>
@@ -174,10 +148,8 @@
 <h3 id="Bold-bold-text"><a href="#Bold-bold-text" class="headerlink" title="Bold: ** bold text **"></a>Bold: ** bold text **</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">This is the original text
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is the original text</span><br><span class="line"><span class="strong">**This is the text in bold**</span></span><br></pre></td></tr></table></figure>
 
-**This is the text in bold**
-</code></pre>
 <ul>
 <li>Output:<br>This is the original text<br><strong>This is the text in bold</strong></li>
 </ul>
@@ -185,10 +157,8 @@
 <h3 id="Italicized-italicized-text"><a href="#Italicized-italicized-text" class="headerlink" title="Italicized: * italicized text *"></a>Italicized: * italicized text *</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">This is the original text
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">This is the original text</span><br><span class="line"><span class="emphasis">*This is the text in italics*</span></span><br></pre></td></tr></table></figure>
 
-*This is the text in italics*
-</code></pre>
 <ul>
 <li>Output:<br>This is the original text<br><em>This is the text in italics</em></li>
 </ul>
@@ -196,13 +166,8 @@
 <h3 id="Blockquote-blockquote"><a href="#Blockquote-blockquote" class="headerlink" title="Blockquote: &gt; blockquote"></a>Blockquote: &gt; blockquote</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">&gt; “In memory yet green, in joy still felt,
-The scenes of life rise sharply into view.
-We triumph; Life&#39;s disasters are undealt,
-And while all else is old, the world is new.”
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; “In memory yet green, in joy still felt,</span></span><br><span class="line">The scenes of life rise sharply into view.</span><br><span class="line">We triumph; Life&#x27;s disasters are undealt,</span><br><span class="line">And while all else is old, the world is new.”</span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; \- Isaac Asimov</span></span><br></pre></td></tr></table></figure>
 
-&gt; \- Isaac Asimov
-</code></pre>
 <ul>
 <li>Output:</li>
 </ul>
@@ -214,12 +179,8 @@ And while all else is old, the world is new.”
 <h3 id="Ordered-List-1-first"><a href="#Ordered-List-1-first" class="headerlink" title="Ordered List: 1.first"></a>Ordered List: 1.first</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">1. whoo, i am the first one
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> whoo, i am the first one</span><br><span class="line"><span class="bullet">2.</span> then i am the second one</span><br><span class="line"><span class="bullet">3.</span> all right, i am the last one</span><br></pre></td></tr></table></figure>
 
-2. then i am the second one
-
-3. all right, i am the last one
-</code></pre>
 <ul>
 <li>Output:</li>
 </ul>
@@ -232,12 +193,8 @@ And while all else is old, the world is new.”
 <h3 id="Unordered-List-First"><a href="#Unordered-List-First" class="headerlink" title="Unordered List: - First"></a>Unordered List: - First</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">- whoo, i am the first one
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> whoo, i am the first one</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> then i am the second one</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> hey, we&#x27;re unordered!</span><br></pre></td></tr></table></figure>
 
-- then i am the second one
-
-- hey, we&#39;re unordered!
-</code></pre>
 <ul>
 <li>Output:<ul>
 <li>whoo, i am the first one</li>
@@ -250,12 +207,8 @@ And while all else is old, the world is new.”
 <h3 id="Horizontal-Rules-—"><a href="#Horizontal-Rules-—" class="headerlink" title="Horizontal Rules: *** &#x2F; — &#x2F; ___"></a>Horizontal Rules: *** &#x2F; — &#x2F; ___</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">***
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"><span class="strong">***</span></span></span><br><span class="line"><span class="strong"><span class="section">---</span></span></span><br><span class="line"><span class="strong"><span class="section">__<span class="emphasis">_</span></span></span></span><br></pre></td></tr></table></figure>
 
----
-
-___
-</code></pre>
 <ul>
 <li>Output:</li>
 </ul>
@@ -266,8 +219,8 @@ ___
 <h3 id="Link-title-https-www-example-com"><a href="#Link-title-https-www-example-com" class="headerlink" title="Link: [title](https://www.example.com)"></a>Link: [title](<a target="_blank" rel="noopener" href="https://www.example.com/">https://www.example.com</a>)</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">My favorite website is [taxuslorの日日新](https://taxuslor.github.io/).
-</code></pre>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">My favorite website is [<span class="string">taxuslorの日日新</span>](<span class="link">https://taxuslor.github.io/</span>).</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>Output:<br>My favorite website is <a href="https://taxuslor.github.io/">taxuslorの日日新</a>.</li>
 </ul>
@@ -275,8 +228,8 @@ ___
 <h3 id="Images-alt-text-image-jpg"><a href="#Images-alt-text-image-jpg" class="headerlink" title="Images: ![alt text](image.jpg)"></a>Images: ![alt text](image.jpg)</h3><ul>
 <li>Syntax:</li>
 </ul>
-<pre><code class="markdown">![This is my avatar](Markdown-Overview_avatar.jpg)
-</code></pre>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">This is my avatar</span>](<span class="link">Markdown-Overview_avatar.jpg</span>)</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>Output:</li>
 </ul>
@@ -295,6 +248,11 @@ ___
         <span class="tag">
             
             <a href="/tags/tips/" style="color: #03a9f4">tips</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/markdown/" style="color: #ff7d73">markdown</a>
         </span>
         
     </div>
@@ -335,7 +293,7 @@ ___
         
         <span class="tag">
             
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #00a596">随笔</a>
+            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #ffa2c4">随笔</a>
         </span>
         
     </div>
@@ -428,6 +386,11 @@ ___
             <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
         </span>
         
+        <span class="tag">
+            
+            <a href="/tags/Music/" style="color: #ff7d73">Music</a>
+        </span>
+        
     </div>
     <a href="/2023/07/29/%E5%92%8C%E5%BC%A6/" class="go-post">阅读全文</a>
 </div>
@@ -479,6 +442,11 @@ ___
         <span class="tag">
             
             <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/Music/" style="color: #ff7d73">Music</a>
         </span>
         
     </div>
@@ -543,7 +511,12 @@ ___
         
         <span class="tag">
             
-            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00a596">基本乐理</a>
+            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/Music/" style="color: #00a596">Music</a>
         </span>
         
     </div>
@@ -597,6 +570,11 @@ ___
         <span class="tag">
             
             <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/Music/" style="color: #ffa2c4">Music</a>
         </span>
         
     </div>
@@ -688,7 +666,12 @@ ___
         
         <span class="tag">
             
-            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #ff7d73">基本乐理</a>
+            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #ffa2c4">基本乐理</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/Music/" style="color: #ff7d73">Music</a>
         </span>
         
     </div>
@@ -729,7 +712,7 @@ ___
         
         <span class="tag">
             
-            <a href="/tags/milestore/" style="color: #ffa2c4">milestore</a>
+            <a href="/tags/milestore/" style="color: #00a596">milestore</a>
         </span>
         
     </div>
