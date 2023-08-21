@@ -116,12 +116,12 @@
             
             <span class="tag">
                 
-                <a href="/tags/Vim/" style="color: #00bcd4">Vim</a>
+                <a href="/tags/Overview/" style="color: #00a596">Overview</a>
             </span>
             
             <span class="tag">
                 
-                <a href="/tags/Overview/" style="color: #00a596">Overview</a>
+                <a href="/tags/Vim/" style="color: #03a9f4">Vim</a>
             </span>
             
         </span>
@@ -196,7 +196,7 @@
 <h3 id="更改类命令"><a href="#更改类命令" class="headerlink" title="更改类命令"></a>更改类命令</h3><blockquote>
 <p>ce</p>
 <p>改变文本直到一个单词的末尾</p>
-<p>c  [number]  motion</p>
+<p>c  [NUMBER]  MOTION</p>
 <p>改变一定数量的操作对象</p>
 <p>c$</p>
 <p>改变光标后的整行</p>
@@ -236,6 +236,53 @@
 <p>:%s&#x2F;old&#x2F;new&#x2F;gc</p>
 <p>找到整个文件中的每个匹配串，并且询问是否进行替换</p>
 </blockquote>
+<h2 id="第五讲"><a href="#第五讲" class="headerlink" title="第五讲"></a>第五讲</h2><h3 id="在Vim内执行外部命令的方法"><a href="#在Vim内执行外部命令的方法" class="headerlink" title="在Vim内执行外部命令的方法"></a>在Vim内执行外部命令的方法</h3><blockquote>
+<p>:! <em>COMMAND</em></p>
+<p>输入 :! 然后紧接着输入一个外部命令可以执行该外部命令</p>
+</blockquote>
+<h3 id="保存文件"><a href="#保存文件" class="headerlink" title="保存文件"></a>保存文件</h3><blockquote>
+<p>:w FILENAME</p>
+<p>将对文件的改动保存到文件中</p>
+<p>v motion :w FILENAME</p>
+<p>保存文件的部分内容</p>
+</blockquote>
+<h3 id="提取和合并文件"><a href="#提取和合并文件" class="headerlink" title="提取和合并文件"></a>提取和合并文件</h3><blockquote>
+<p>:r FILENAME</p>
+<p>向当前文件中插入另外的文件的内容</p>
+</blockquote>
+<h2 id="第六讲"><a href="#第六讲" class="headerlink" title="第六讲"></a>第六讲</h2><h3 id="打开类命令"><a href="#打开类命令" class="headerlink" title="打开类命令"></a>打开类命令</h3><blockquote>
+<p>o</p>
+<p>输入 o 将在光标的下方打开新的一行并进入插入模式</p>
+<p>O</p>
+<p>输入 O 将在光标的上方打开新的一行并进入插入模式</p>
+</blockquote>
+<h3 id="附加类命令"><a href="#附加类命令" class="headerlink" title="附加类命令"></a>附加类命令</h3><blockquote>
+<p>a</p>
+<p>输入a可在光标之后插入文字</p>
+</blockquote>
+<h3 id="置换类命令"><a href="#置换类命令" class="headerlink" title="置换类命令"></a>置换类命令</h3><blockquote>
+<p>R</p>
+<p>可连续替换多个字符</p>
+</blockquote>
+<h3 id="复制粘贴文本"><a href="#复制粘贴文本" class="headerlink" title="复制粘贴文本"></a>复制粘贴文本</h3><blockquote>
+<p>y</p>
+<p>复制文本</p>
+<p>p</p>
+<p>粘贴文本</p>
+</blockquote>
+<h3 id="设置类命令"><a href="#设置类命令" class="headerlink" title="设置类命令"></a>设置类命令</h3><blockquote>
+<p>:set <em>SETTING</em></p>
+<p>设置选项</p>
+</blockquote>
+<h2 id="第七讲"><a href="#第七讲" class="headerlink" title="第七讲"></a>第七讲</h2><h3 id="获取帮助信息"><a href="#获取帮助信息" class="headerlink" title="获取帮助信息"></a>获取帮助信息</h3><blockquote>
+<p>:help <em>COMMAND</em></p>
+<p>获取<em>COMMAND</em>相关帮助</p>
+<p>:q</p>
+<p>退出帮助</p>
+</blockquote>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul>
+<li>以上仅为vimtutor的部分内容，要想掌握vim，还得是熟能生巧，以上。</li>
+</ul>
 
     </div>
     
