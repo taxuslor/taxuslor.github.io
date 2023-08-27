@@ -115,6 +115,109 @@
         
 
 <div class="post">
+    <a href="/2023/08/27/ComposingPrograms-I/">
+        <h2 class="post-title">ComposingPrograms-I</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/8/27
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h1 id="Chapter1-Building-Abstractions-with-Functions"><a href="#Chapter1-Building-Abstractions-with-Functions" class="headerlink" title="Chapter1: Building Abstractions with Functions"></a>Chapter1: Building Abstractions with Functions</h1><h2 id="1-1-Getting-Started"><a href="#1-1-Getting-Started" class="headerlink" title="1.1 Getting Started"></a>1.1 Getting Started</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/11-getting-started.html">1.1  Getting Started</a></li>
+</ul>
+<h2 id="1-2-Elements-of-Programming"><a href="#1-2-Elements-of-Programming" class="headerlink" title="1.2 Elements of Programming"></a>1.2 Elements of Programming</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/12-elements-of-programming.html">1.2 Elements of Programming</a></li>
+<li>Every powerful language has three mechanisms:<ul>
+<li><strong>primitive expressions and statements</strong>, which represent the simplest building blocks that the language provides,</li>
+<li><strong>means of combination</strong>, by which compound elements are built from simpler ones, and</li>
+<li><strong>means of abstraction</strong>, by which compound elements can be named and manipulated as units.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-1-Expressions"><a href="#1-2-1-Expressions" class="headerlink" title="1.2.1 Expressions"></a>1.2.1 Expressions</h3><ul>
+<li><em>infix</em> notation: a way of writing mathematical expressions where the operator is placed between the operands</li>
+</ul>
+<h3 id="1-2-2-Call-Expressions"><a href="#1-2-2-Call-Expressions" class="headerlink" title="1.2.2 Call Expressions"></a>1.2.2 Call Expressions</h3><ul>
+<li>Some key characteristics of call expressions in Python:<ul>
+<li>The function name comes first, followed by opening and closing parentheses. For example: <code>my_function()</code></li>
+<li>Arguments are passed inside the parentheses separated by commas. For example: <code>my_function(arg1, arg2)</code></li>
+<li>Arguments can include literal values, variables, expressions, etc. For example: <code>my_function(5, x, y+1)</code></li>
+<li>Calling functions executes the code in the function body using the passed arguments.</li>
+<li>The return value from the function is used where the call expression appears. For example: <code>print(my_function(5))</code></li>
+<li>Call expressions can be nested, like <code>func1(func2(arg))</code></li>
+<li>The number of arguments must match the function definition, unless default values are specified.</li>
+<li>Keyword arguments can be used with call expressions for clarity. For example: <code>my_function(arg1=5, arg2=x)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-3-Importing-Library-Functions"><a href="#1-2-3-Importing-Library-Functions" class="headerlink" title="1.2.3 Importing Library Functions"></a>1.2.3 Importing Library Functions</h3><ul>
+<li>Python organizes the functions and other quantities that it knows about into modules, which together comprise the Python Library. To use these elements, one imports them.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> operator <span class="keyword">import</span> add, sub, mul</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>add(<span class="number">14</span>, <span class="number">28</span>)</span><br><span class="line"><span class="number">42</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sub(<span class="number">100</span>, mul(<span class="number">7</span>, add(<span class="number">8</span>, <span class="number">4</span>)))</span><br><span class="line"><span class="number">16</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-4-Names-and-Environment"><a href="#1-2-4-Names-and-Environment" class="headerlink" title="1.2.4 Names and Environment"></a>1.2.4 Names and Environment</h3><ul>
+<li><p>assignment operator <code>=</code> allows us to use names to refer to computational objects</p>
+</li>
+<li><p>names are also bound via import statements</p>
+</li>
+<li><p>Python evaluates the expression to the right of <code>=</code> before changing the binding to the name on the left. </p>
+</li>
+<li><p>Changing the value of one name does not affect other names.</p>
+</li>
+<li><p>An environment is a mapping of names to objects. For example, a function has its own local environment that maps the names of its parameters to objects.</p>
+</li>
+<li><p>Each environment has its own lifetime - for example, local environments are created when a function is called and destroyed when it returns.</p>
+</li>
+</ul>
+<h3 id="1-2-5-Evaluating-Nested-Expressions"><a href="#1-2-5-Evaluating-Nested-Expressions" class="headerlink" title="1.2.5 Evaluating Nested Expressions"></a>1.2.5 Evaluating Nested Expressions</h3><ul>
+<li>To evaluate a call expression, Python will do the following:<ol>
+<li>Evaluate the operator and operand subexpressions, then</li>
+<li>Apply the function that is the value of the operator subexpression to the arguments that are the values of the operand subexpressions.</li>
+</ol>
+</li>
+</ul>
+<h3 id="1-2-6-The-Non-Pure-Print-Function"><a href="#1-2-6-The-Non-Pure-Print-Function" class="headerlink" title="1.2.6 The Non-Pure Print Function"></a>1.2.6 The Non-Pure Print Function</h3><ul>
+<li><strong>Pure functions.</strong> Functions have some input (their arguments) and return some output (the result of applying them). Pure functions have the property that applying them has no effects beyond returning a value. Moreover, a pure function must always return the same value when called twice with the same arguments.</li>
+<li><strong>Non-pure functions.</strong> In addition to returning a value, applying a non-pure function can generate <em>side effects</em>, which make some change to the state of the interpreter or computer. A common side effect is to generate additional output beyond the return value, using the <code>print</code> function.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="built_in">print</span>(<span class="number">1</span>), <span class="built_in">print</span>(<span class="number">2</span>))</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="literal">None</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3-Defining-New-Functions"><a href="#1-3-Defining-New-Functions" class="headerlink" title="1.3 Defining New Functions"></a>1.3 Defining New Functions</h2>
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/Python/" style="color: #00bcd4">Python</a>
+        </span>
+        
+        <span class="tag">
+            
+            <a href="/tags/ComposingPrograms/" style="color: #ff7d73">ComposingPrograms</a>
+        </span>
+        
+    </div>
+    <a href="/2023/08/27/ComposingPrograms-I/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2023/08/23/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/">
         <h2 class="post-title">日本語文法（三）</h2>
     </a>
@@ -320,7 +423,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #ffa2c4">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00a596">日本語</a>
         </span>
         
     </div>
@@ -624,7 +727,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #ff7d73">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00bcd4">日本語</a>
         </span>
         
     </div>
@@ -816,12 +919,12 @@
         
         <span class="tag">
             
-            <a href="/tags/Overview/" style="color: #ff7d73">Overview</a>
+            <a href="/tags/Overview/" style="color: #03a9f4">Overview</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Vim/" style="color: #03a9f4">Vim</a>
+            <a href="/tags/Vim/" style="color: #00bcd4">Vim</a>
         </span>
         
     </div>
@@ -904,7 +1007,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00bcd4">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #03a9f4">日本語</a>
         </span>
         
     </div>
@@ -1044,12 +1147,12 @@
         
         <span class="tag">
             
-            <a href="/tags/Markdown/" style="color: #ff7d73">Markdown</a>
+            <a href="/tags/Markdown/" style="color: #00a596">Markdown</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Overview/" style="color: #ffa2c4">Overview</a>
+            <a href="/tags/Overview/" style="color: #00bcd4">Overview</a>
         </span>
         
     </div>
@@ -1090,7 +1193,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #ffa2c4">随笔</a>
+            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #00a596">随笔</a>
         </span>
         
     </div>
@@ -1180,12 +1283,12 @@
         
         <span class="tag">
             
-            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #ffa2c4">基本乐理</a>
+            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Music/" style="color: #00bcd4">Music</a>
+            <a href="/tags/Music/" style="color: #03a9f4">Music</a>
         </span>
         
     </div>
@@ -1238,12 +1341,12 @@
         
         <span class="tag">
             
-            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
+            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #ffa2c4">基本乐理</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Music/" style="color: #03a9f4">Music</a>
+            <a href="/tags/Music/" style="color: #ffa2c4">Music</a>
         </span>
         
     </div>
@@ -1318,64 +1421,6 @@
         
     </div>
     <a href="/2023/07/26/%E8%AE%B0%E8%B0%B1%E6%B3%95/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/07/24/%E9%9F%B3%E5%BE%8B/">
-        <h2 class="post-title">音律</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/7/24
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="音律"><a href="#音律" class="headerlink" title="音律"></a>音律</h1><ul>
-<li>音律：各音的绝对准确高度及相互关系</li>
-</ul>
-<h2 id="十二平均律"><a href="#十二平均律" class="headerlink" title="十二平均律"></a>十二平均律</h2><ul>
-<li>十二平均律：将八度分为十二个均等的部分（半音）的音律<br>半音是十二平均律中组织中最小的音高距离<br>两音间的距离等于两个半音的叫做全音</li>
-</ul>
-<h2 id="自然半音和自然全音-变化半音和变化全音"><a href="#自然半音和自然全音-变化半音和变化全音" class="headerlink" title="自然半音和自然全音 变化半音和变化全音"></a>自然半音和自然全音 变化半音和变化全音</h2><ul>
-<li>自然半音：由两个相邻的音级构成的半音叫做自然半音</li>
-<li>自然全音：由两个相邻的音级构成的全音叫做自然全音</li>
-<li>变化半音：由同一音级的两种不同形式所构成的半音叫做变化半音</li>
-<li>变化全音：由同一音级的两种不同形式所构成的全音叫做变化全音</li>
-</ul>
-<h2 id="等音"><a href="#等音" class="headerlink" title="等音"></a>等音</h2><ul>
-<li>等音：音高相同而意义和记法不同的音</li>
-</ul>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #ff7d73">基本乐理</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/Music/" style="color: #ffa2c4">Music</a>
-        </span>
-        
-    </div>
-    <a href="/2023/07/24/%E9%9F%B3%E5%BE%8B/" class="go-post">阅读全文</a>
 </div>
 
 

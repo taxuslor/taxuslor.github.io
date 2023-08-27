@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+    <head>
+        <meta charset="utf-8" />
+        <title>ComposingPrograms-I | taxuslorの日日新</title>
+        <meta name="author" content="taxuslor" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/images/favicon.jpg" />
+        <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+        <script src="https://kit.fontawesome.com/242216fcb6.js" crossorigin="anonymous"></script>
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <div id="loading-circle">
+                        <h2>LOADING</h2>
+                        <p>加载过慢请开启缓存 浏览器默认开启</p>
+                        <img src="/images/loading.gif" />
+                    </div>
+                </div>
+            </transition>
+            <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/">
+            <span>TAXUSLORの日日新</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/tags/milestore/">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;TAXUSLORの日日新</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/tags/milestore/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+            <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+                <div class="article">
+    <div>
+        <h1>ComposingPrograms-I</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/8/27
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/Python/" style="color: #ffa2c4">Python</a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/ComposingPrograms/" style="color: #00a596">ComposingPrograms</a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="Chapter1-Building-Abstractions-with-Functions"><a href="#Chapter1-Building-Abstractions-with-Functions" class="headerlink" title="Chapter1: Building Abstractions with Functions"></a>Chapter1: Building Abstractions with Functions</h1><h2 id="1-1-Getting-Started"><a href="#1-1-Getting-Started" class="headerlink" title="1.1 Getting Started"></a>1.1 Getting Started</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/11-getting-started.html">1.1  Getting Started</a></li>
+</ul>
+<h2 id="1-2-Elements-of-Programming"><a href="#1-2-Elements-of-Programming" class="headerlink" title="1.2 Elements of Programming"></a>1.2 Elements of Programming</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/12-elements-of-programming.html">1.2 Elements of Programming</a></li>
+<li>Every powerful language has three mechanisms:<ul>
+<li><strong>primitive expressions and statements</strong>, which represent the simplest building blocks that the language provides,</li>
+<li><strong>means of combination</strong>, by which compound elements are built from simpler ones, and</li>
+<li><strong>means of abstraction</strong>, by which compound elements can be named and manipulated as units.</li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-1-Expressions"><a href="#1-2-1-Expressions" class="headerlink" title="1.2.1 Expressions"></a>1.2.1 Expressions</h3><ul>
+<li><em>infix</em> notation: a way of writing mathematical expressions where the operator is placed between the operands</li>
+</ul>
+<h3 id="1-2-2-Call-Expressions"><a href="#1-2-2-Call-Expressions" class="headerlink" title="1.2.2 Call Expressions"></a>1.2.2 Call Expressions</h3><ul>
+<li>Some key characteristics of call expressions in Python:<ul>
+<li>The function name comes first, followed by opening and closing parentheses. For example: <code>my_function()</code></li>
+<li>Arguments are passed inside the parentheses separated by commas. For example: <code>my_function(arg1, arg2)</code></li>
+<li>Arguments can include literal values, variables, expressions, etc. For example: <code>my_function(5, x, y+1)</code></li>
+<li>Calling functions executes the code in the function body using the passed arguments.</li>
+<li>The return value from the function is used where the call expression appears. For example: <code>print(my_function(5))</code></li>
+<li>Call expressions can be nested, like <code>func1(func2(arg))</code></li>
+<li>The number of arguments must match the function definition, unless default values are specified.</li>
+<li>Keyword arguments can be used with call expressions for clarity. For example: <code>my_function(arg1=5, arg2=x)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-3-Importing-Library-Functions"><a href="#1-2-3-Importing-Library-Functions" class="headerlink" title="1.2.3 Importing Library Functions"></a>1.2.3 Importing Library Functions</h3><ul>
+<li>Python organizes the functions and other quantities that it knows about into modules, which together comprise the Python Library. To use these elements, one imports them.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> operator <span class="keyword">import</span> add, sub, mul</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>add(<span class="number">14</span>, <span class="number">28</span>)</span><br><span class="line"><span class="number">42</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sub(<span class="number">100</span>, mul(<span class="number">7</span>, add(<span class="number">8</span>, <span class="number">4</span>)))</span><br><span class="line"><span class="number">16</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-4-Names-and-Environment"><a href="#1-2-4-Names-and-Environment" class="headerlink" title="1.2.4 Names and Environment"></a>1.2.4 Names and Environment</h3><ul>
+<li><p>assignment operator <code>=</code> allows us to use names to refer to computational objects</p>
+</li>
+<li><p>names are also bound via import statements</p>
+</li>
+<li><p>Python evaluates the expression to the right of <code>=</code> before changing the binding to the name on the left. </p>
+</li>
+<li><p>Changing the value of one name does not affect other names.</p>
+</li>
+<li><p>An environment is a mapping of names to objects. For example, a function has its own local environment that maps the names of its parameters to objects.</p>
+</li>
+<li><p>Each environment has its own lifetime - for example, local environments are created when a function is called and destroyed when it returns.</p>
+</li>
+</ul>
+<h3 id="1-2-5-Evaluating-Nested-Expressions"><a href="#1-2-5-Evaluating-Nested-Expressions" class="headerlink" title="1.2.5 Evaluating Nested Expressions"></a>1.2.5 Evaluating Nested Expressions</h3><ul>
+<li>To evaluate a call expression, Python will do the following:<ol>
+<li>Evaluate the operator and operand subexpressions, then</li>
+<li>Apply the function that is the value of the operator subexpression to the arguments that are the values of the operand subexpressions.</li>
+</ol>
+</li>
+</ul>
+<h3 id="1-2-6-The-Non-Pure-Print-Function"><a href="#1-2-6-The-Non-Pure-Print-Function" class="headerlink" title="1.2.6 The Non-Pure Print Function"></a>1.2.6 The Non-Pure Print Function</h3><ul>
+<li><strong>Pure functions.</strong> Functions have some input (their arguments) and return some output (the result of applying them). Pure functions have the property that applying them has no effects beyond returning a value. Moreover, a pure function must always return the same value when called twice with the same arguments.</li>
+<li><strong>Non-pure functions.</strong> In addition to returning a value, applying a non-pure function can generate <em>side effects</em>, which make some change to the state of the interpreter or computer. A common side effect is to generate additional output beyond the return value, using the <code>print</code> function.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="built_in">print</span>(<span class="number">1</span>), <span class="built_in">print</span>(<span class="number">2</span>))</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="literal">None</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="1-3-Defining-New-Functions"><a href="#1-3-Defining-New-Functions" class="headerlink" title="1.3 Defining New Functions"></a>1.3 Defining New Functions</h2>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 taxuslorの日日新
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;taxuslor
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+            </div>
+            
+            <transition name="fade">
+                <div id="preview" ref="preview" v-show="previewShow">
+                    <img id="preview-content" ref="previewContent" />
+                </div>
+            </transition>
+            
+        </div>
+        <script src='/js/main.js'></script>
+        
+        
+
+
+
+
+        
+    </body>
+</html>
