@@ -173,7 +173,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #ff7d73">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00a596">日本語</a>
         </span>
         
     </div>
@@ -258,7 +258,41 @@
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="built_in">print</span>(<span class="number">1</span>), <span class="built_in">print</span>(<span class="number">2</span>))</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="literal">None</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="1-3-Defining-New-Functions"><a href="#1-3-Defining-New-Functions" class="headerlink" title="1.3 Defining New Functions"></a>1.3 Defining New Functions</h2>
+<h2 id="1-3-Defining-New-Functions"><a href="#1-3-Defining-New-Functions" class="headerlink" title="1.3 Defining New Functions"></a>1.3 Defining New Functions</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/13-defining-new-functions.html">Defining New Functions</a></p>
+</li>
+<li><p><strong>How to define a function.</strong> Function definitions consist of a <code>def</code> statement that indicates a <code>&lt;name&gt;</code> and a comma-separated list of named <code>&lt;formal parameters&gt;</code>, then a <code>return</code> statement, called the function body, that specifies the <code>&lt;return expression&gt;</code> of the function, which is an expression to be evaluated whenever the function is applied:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> &lt;name&gt;(&lt;formal parameters&gt;):</span><br><span class="line">    <span class="keyword">return</span> &lt;<span class="keyword">return</span> expression&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="1-3-1-Environments"><a href="#1-3-1-Environments" class="headerlink" title="1.3.1 Environments"></a>1.3.1 Environments</h3><ul>
+<li>An environment in which an expression is evaluated consists of a sequence of <em>frames</em>, each frame contains <em>bindings</em>, each of which associates a name with its corresponding value. There is a single <em>global</em> frame. Assignment and import statements add entries to the first frame of the current environment. </li>
+<li><strong>Function Signatures.</strong> Functions differ in the number of arguments that they are allowed to take. To track these requirements, we draw each function in a way that shows the function name and its formal parameters. The user-defined function <code>square</code> takes only <code>x</code>; providing more or fewer arguments will result in an error. A description of the formal parameters of a function is called the function’s signature.</li>
+</ul>
+<h3 id="1-3-2-Calling-User-Defined-Functions"><a href="#1-3-2-Calling-User-Defined-Functions" class="headerlink" title="1.3.2 Calling User-Defined Functions"></a>1.3.2 Calling User-Defined Functions</h3><ul>
+<li>Applying a user-defined function introduces a second <em>local</em> frame, which is only accessible to that function. To apply a user-defined function to some arguments:<ol>
+<li>Bind the arguments to the names of the function’s formal parameters in a new <em>local</em> frame.</li>
+<li>Execute the body of the function in the environment that starts with this frame.</li>
+</ol>
+</li>
+<li><strong>Name Evaluation.</strong> A name evaluates to the value bound to that name in the earliest frame of the current environment in which that name is found.</li>
+</ul>
+<h3 id="1-3-4-Local-Names"><a href="#1-3-4-Local-Names" class="headerlink" title="1.3.4 Local Names"></a>1.3.4 Local Names</h3><ul>
+<li>The <em>scope</em> of a local name is limited to the body of the user-defined function that defines it. When a name is no longer accessible, it is out of scope.</li>
+</ul>
+<h3 id="1-3-5-Choosing-Names"><a href="#1-3-5-Choosing-Names" class="headerlink" title="1.3.5 Choosing Names"></a>1.3.5 Choosing Names</h3><ul>
+<li>a guide for all (non-rebellious) Python programmers:</li>
+</ul>
+<ol>
+<li>Function names are lowercase, with words separated by underscores. Descriptive names are encouraged.</li>
+<li>Function names typically evoke operations applied to arguments by the interpreter (e.g., <code>print</code>, <code>add</code>, <code>square</code>) or the name of the quantity that results (e.g., <code>max</code>, <code>abs</code>, <code>sum</code>).</li>
+<li>Parameter names are lowercase, with words separated by underscores. Single-word names are preferred.</li>
+<li>Parameter names should evoke the role of the parameter in the function, not just the kind of argument that is allowed.</li>
+<li>Single letter parameter names are acceptable when their role is obvious, but avoid “l” (lowercase ell), “O” (capital oh), or “I” (capital i) to avoid confusion with numerals.</li>
+</ol>
+<h3 id="1-3-6-Functions-as-Abstractions"><a href="#1-3-6-Functions-as-Abstractions" class="headerlink" title="1.3.6  Functions as Abstractions"></a>1.3.6  Functions as Abstractions</h3><ul>
+<li><strong>Aspects of a functional abstraction.</strong> To master the use of a functional abstraction, it is often useful to consider its three core attributes. The <em>domain</em> of a function is the set of arguments it can take. The <em>range</em> of a function is the set of values it can return. The <em>intent</em> of a function is the relationship it computes between inputs and output (as well as any side effects it might generate). Understanding functional abstractions via their domain, range, and intent is critical to using them correctly in a complex program.</li>
+</ul>
+
             
         </div>
     </div>
@@ -271,12 +305,12 @@
         
         <span class="tag">
             
-            <a href="/tags/Python/" style="color: #ff7d73">Python</a>
+            <a href="/tags/Python/" style="color: #00a596">Python</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/ComposingPrograms/" style="color: #00a596">ComposingPrograms</a>
+            <a href="/tags/ComposingPrograms/" style="color: #00bcd4">ComposingPrograms</a>
         </span>
         
     </div>
@@ -489,7 +523,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #03a9f4">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00bcd4">日本語</a>
         </span>
         
     </div>
@@ -793,7 +827,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #ffa2c4">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #03a9f4">日本語</a>
         </span>
         
     </div>
@@ -985,12 +1019,12 @@
         
         <span class="tag">
             
-            <a href="/tags/Overview/" style="color: #ffa2c4">Overview</a>
+            <a href="/tags/Overview/" style="color: #00a596">Overview</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Vim/" style="color: #00a596">Vim</a>
+            <a href="/tags/Vim/" style="color: #ff7d73">Vim</a>
         </span>
         
     </div>
@@ -1073,7 +1107,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #03a9f4">日本語</a>
+            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00bcd4">日本語</a>
         </span>
         
     </div>
@@ -1213,12 +1247,12 @@
         
         <span class="tag">
             
-            <a href="/tags/Markdown/" style="color: #ff7d73">Markdown</a>
+            <a href="/tags/Markdown/" style="color: #00a596">Markdown</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Overview/" style="color: #00bcd4">Overview</a>
+            <a href="/tags/Overview/" style="color: #ffa2c4">Overview</a>
         </span>
         
     </div>
@@ -1259,7 +1293,7 @@
         
         <span class="tag">
             
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #ffa2c4">随笔</a>
+            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #00bcd4">随笔</a>
         </span>
         
     </div>
@@ -1349,12 +1383,12 @@
         
         <span class="tag">
             
-            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #00bcd4">基本乐理</a>
+            <a href="/tags/%E5%9F%BA%E6%9C%AC%E4%B9%90%E7%90%86/" style="color: #03a9f4">基本乐理</a>
         </span>
         
         <span class="tag">
             
-            <a href="/tags/Music/" style="color: #00a596">Music</a>
+            <a href="/tags/Music/" style="color: #00bcd4">Music</a>
         </span>
         
     </div>
@@ -1412,7 +1446,7 @@
         
         <span class="tag">
             
-            <a href="/tags/Music/" style="color: #03a9f4">Music</a>
+            <a href="/tags/Music/" style="color: #00bcd4">Music</a>
         </span>
         
     </div>
