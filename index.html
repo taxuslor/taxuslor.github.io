@@ -1,1611 +1,374 @@
 
+
 <!DOCTYPE html>
-<html lang="cn">
-    <head>
-        <meta charset="utf-8" />
-        <title>taxuslorの日日新</title>
-        <meta name="author" content="taxuslor" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-        <link rel="icon" href="/images/favicon.jpg" />
-        <script src="https://cdn.staticfile.org/vue/3.3.4/vue.global.prod.min.js"></script>
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css" />
-<link rel="stylesheet" href="/css/fonts.min.css" />
-<script> const mixins = {}; </script>
-
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<html lang="zh-CN" data-default-color-scheme=auto>
 
 
 
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/asuna.png">
+  <link rel="icon" href="/img/asuna.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="taxuslor">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="一两手札">
+<meta property="og:url" content="https://taxuslor.github.io/index.html">
+<meta property="og:site_name" content="一两手札">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="taxuslor">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>一两手札</title>
 
-<script src="/js/lib/preview.js"></script>
-
-
-
-
-
-<script src="/js/lib/home.js"></script>
-
-<link rel="stylesheet" href="/css/main.css" />
-
-        <script src="https://kit.fontawesome.com/242216fcb6.js" crossorigin="anonymous"></script>
-    <meta name="generator" content="Hexo 6.3.0"></head>
-    <body>
-        <div id="layout">
-            <transition name="fade">
-                <div id="loading" v-show="loading">
-                    <div id="loading-circle">
-                        <h2>LOADING</h2>
-                        <p>加载过慢请开启缓存 浏览器默认开启</p>
-                        <img src="/images/loading.gif" />
-                    </div>
-                </div>
-            </transition>
-            <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
-    <nav id="desktop-menu">
-        <a class="title" href="/">
-            <span>TAXUSLORの日日新</span>
-        </a>
-        
-        <a href="/">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
-        </a>
-        
-        <a href="/tags/milestore/">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
-        </a>
-        
-    </nav>
-    <nav id="mobile-menu">
-        <div class="title" @click="showMenuItems = !showMenuItems">
-            <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;TAXUSLORの日日新</span>
-        </div>
-        <transition name="slide">
-            <div class="items" v-show="showMenuItems">
-                
-                <a href="/">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-house fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
-                    </div>
-                </a>
-                
-                <a href="/tags/milestore/">
-                    <div class="item">
-                        <div style="min-width: 20px; max-width: 50px; width: 10%">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </div>
-                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
-                    </div>
-                </a>
-                
-            </div>
-        </transition>
-    </nav>
-</div>
-<transition name="fade">
-    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
-</transition>
-
-            <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-                <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/images/background01.jpg,/images/background02.png,/images/background05.jpg,/images/background06.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>taxuslorの日日新</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
-    </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2023/11/03/%E5%B0%8F%E8%AE%B0%E5%85%B6%E4%B8%89/">
-        <h2 class="post-title">小记其三</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/11/3
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="小记其三"><a href="#小记其三" class="headerlink" title="小记其三"></a>小记其三</h1><ul>
-<li>最近一切都好，目前感兴趣的方向包括但不限于机器学习&#x2F;深度学习，VR&#x2F;AR&#x2F;MR，计算机图形学。还有等一切安顿下来，更新频率应该会提高，也许吧。</li>
-</ul>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #00bcd4">随笔</a>
-        </span>
-        
-    </div>
-    <a href="/2023/11/03/%E5%B0%8F%E8%AE%B0%E5%85%B6%E4%B8%89/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/10/18/%E5%B0%8F%E8%AE%B0%E5%85%B6%E4%BA%8C/">
-        <h2 class="post-title">小记其二</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/10/18
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="小记其二"><a href="#小记其二" class="headerlink" title="小记其二"></a>小记其二</h1><p>​	很久没有写blog了，日语的学习停摆，生活也是止步不前。现在回想看当初做blog的初衷是什么呢？大抵是记录生活的，督促自己不要惰怠。目前是渐渐忙起来了，也重新拾起了以前阅读的爱好。以后blog更新的频率也不会很高，每天的重心还是放在CS的学习上。</p>
-<p>​	最近很喜欢一句话，大意是这样的：不要规定每天的工作时间而是规定每天的工作量。很久以来一直痴迷于自己按照时间规划日常，但是实际操作下来，往往相应时间的无法完成对应的任务，所以现在换个思路——以量为主。</p>
-<p>​	还有，近期脱手了所有的crypto，有时间再写写这方面的思考吧。</p>
-<p>​	以上。</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" style="color: #ff7d73">随笔</a>
-        </span>
-        
-    </div>
-    <a href="/2023/10/18/%E5%B0%8F%E8%AE%B0%E5%85%B6%E4%BA%8C/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/23/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%BA%94%EF%BC%89/">
-        <h2 class="post-title">日本語文法（五）</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/23
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="日本語文法（五）"><a href="#日本語文法（五）" class="headerlink" title="日本語文法（五）"></a>日本語文法（五）</h1><h2 id="1-今-〜時-〜分です"><a href="#1-今-〜時-〜分です" class="headerlink" title="1. 今　〜時　〜分です"></a>1. 今　〜時　〜分です</h2><ul>
-<li>表示现在的时间</li>
-</ul>
-<blockquote>
-<p>今四時です。</p>
-<p>今何時ですか。　八時三十分です。</p>
-</blockquote>
-<ul>
-<li>三十分　可以用　半（はん）　代替， 表示具体时间的词前面还可以加上“午前（ごぜん）”或“午後（ごご）”</li>
-</ul>
-<blockquote>
-<p>今午前八時半です。</p>
-</blockquote>
-<h2 id="2-动ます-动ません-动ました-动ませんでした"><a href="#2-动ます-动ません-动ました-动ませんでした" class="headerlink" title="2. 动ます&#x2F;动ません　动ました&#x2F;动ませんでした"></a>2. 动ます&#x2F;动ません　动ました&#x2F;动ませんでした</h2><ul>
-<li>肯定地叙述现在的习惯性动作、状态以及未来的动作、状态时，用“ます”，其否定形式是“ません”。肯定地叙述过去的动作时“ました”，其香定形式是“ませんでした”</li>
-</ul>
-<blockquote>
-<p>森さんは毎日（まいにち）働き（はたらき）ます。　</p>
-<p>田中さんは明日（あした）休み（やすみ）ます。　</p>
-<p>田中さんは今日（きょう）働きません。　</p>
-<p>森さんは明日休みません。　</p>
-<p>森さんは先週（せんしゅう）休みました。</p>
-<p>私は昨日（きのう）働きませんでした。</p>
-<p>田中さんは明日働きますか。　</p>
-<p>李さんは先週休みましたか。　</p>
-</blockquote>
-<h2 id="3-名-时间-に-动"><a href="#3-名-时间-に-动" class="headerlink" title="3. 名[时间]　に　动"></a>3. 名[时间]　に　动</h2><ul>
-<li>表示动作发生的时间时，要在具体时间词语后面加上助词“に”</li>
-</ul>
-<blockquote>
-<p>森さんは七時に起きます。</p>
-<p>学校（がっこう）八時半に始（はじ）まります。</p>
-</blockquote>
-<h2 id="4-名-时间-から-名-时间-まで-动"><a href="#4-名-时间-から-名-时间-まで-动" class="headerlink" title="4. 名[时间]から　名[时间]まで　动"></a>4. 名[时间]から　名[时间]まで　动</h2><ul>
-<li>表示某动作发生在某个期间</li>
-</ul>
-<blockquote>
-<p>私は九時から五時まで働きます。</p>
-<p>森さん月曜日から水曜日まで休みした。</p>
-</blockquote>
-<blockquote>
-<p>私は九時から働きます。</p>
-<p>森さんは水曜日まで勉強（べんきょう）します。</p>
-</blockquote>
-<h2 id="5-いつ-动-ますか"><a href="#5-いつ-动-ますか" class="headerlink" title="5. いつ　动 ますか"></a>5. いつ　动 ますか</h2><ul>
-<li>询问某动作或事态进行的时间用“いつ”</li>
-</ul>
-<blockquote>
-<p>試験（しけん）はいつ始まりますか。</p>
-<p>仕事（しごと）は何時にいつ終わりますか。</p>
-</blockquote>
-<blockquote>
-<p>展覧会（てんらんかい）はいつから始まりますか。</p>
-<p>張さん何曜日まで休みますか。	火曜日までです。</p>
-</blockquote>
-<h2 id="6-ごろ"><a href="#6-ごろ" class="headerlink" title="6. ごろ"></a>6. ごろ</h2><p>-　 接在表示时间的词语后面，表示大致的时问范围</p>
-<blockquote>
-<p>昨日十二時半ごろ寝ました。</p>
-</blockquote>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00a596">日本語</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/23/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%BA%94%EF%BC%89/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/17/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E5%9B%9B%EF%BC%89/">
-        <h2 class="post-title">日本語文法（四）</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/17
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="日本語文法（四）"><a href="#日本語文法（四）" class="headerlink" title="日本語文法（四）"></a>日本語文法（四）</h1><h2 id="1-あります、います"><a href="#1-あります、います" class="headerlink" title="1.あります、います"></a>1.あります、います</h2><ul>
-<li>用于表示事物存在</li>
-<li>“あります”用于花、草、 桌子等不具有意志的事物。“います”用于具有意志的人、动物或昆虫。</li>
-</ul>
-<h3 id="（1）名-场所-に-名-物-人-が-あります-います"><a href="#（1）名-场所-に-名-物-人-が-あります-います" class="headerlink" title="（1）名[场所]に　名[物&#x2F;人]が　 あります&#x2F; います"></a>（1）名[场所]に　名[物&#x2F;人]が　 あります&#x2F; います</h3><blockquote>
-<p>部屋（へや）に机があります。　房间里有桌子。</p>
-<p>ここに本があります。	这里有书。</p>
-<p>庭（にわ）に何がありますか。　院子里有什么？</p>
-<p>部屋に猫（ねこ）がいます。　房间里有一只猫。</p>
-<p>公園（こうえん）に子供（こども）がいます。　公园里有孩子。</p>
-<p>あそこにどれがいますか。	那里有谁？</p>
-</blockquote>
-<h3 id="（2）名-物-人-は-名-场所-に-あります-います"><a href="#（2）名-物-人-は-名-场所-に-あります-います" class="headerlink" title="（2）名[物&#x2F;人]は　名[场所]に　 あります&#x2F; います"></a>（2）名[物&#x2F;人]は　名[场所]に　 あります&#x2F; います</h3><blockquote>
-<p>椅子（いす）は部屋にあります。　椅子在房间里。</p>
-<p>本はここにあります。	书在这里。</p>
-<p>図書館（としょかん）はどこにあります。	图书馆在哪儿？</p>
-<p>吉田さんは庭います。	吉田先生在院子里。</p>
-<p>子供は公園にいます。	孩子在公园。</p>
-<p>犬（いぬ）はどこにいます。	狗在哪儿？</p>
-</blockquote>
-<h2 id="2-名-と-名"><a href="#2-名-と-名" class="headerlink" title="2.名　と　名"></a>2.名　と　名</h2><ul>
-<li>助词“と”加在两个名词之间表示并列，相当于“和”</li>
-</ul>
-<blockquote>
-<p>時計（とけい）と眼鏡（めがね）　表和眼镜</p>
-<p>ビールとウイスキー　啤酒和威士忌</p>
-<p>居間（いま）にテレビとビデオが あります。　起居室里有电视机和录像机。</p>
-</blockquote>
-<h2 id="3-上-下-前-後ろ-隣-中-外"><a href="#3-上-下-前-後ろ-隣-中-外" class="headerlink" title="3.上&#x2F;下&#x2F;前&#x2F;後ろ&#x2F;隣&#x2F;中&#x2F;外"></a>3.上&#x2F;下&#x2F;前&#x2F;後ろ&#x2F;隣&#x2F;中&#x2F;外</h2><ul>
-<li>表示具体位置时，用“名词+の+上（うえ）&#x2F;下（した）&#x2F;前（まえ）&#x2F;後ろ（うしろ）&#x2F;隣（となり）&#x2F;中（なか）&#x2F;外（そと）”</li>
-</ul>
-<blockquote>
-<p>机の上に猫がいます。　桌子上面有一只猫。</p>
-<p>会社の隣に花屋（はなや）があります。　公司旁边有花店。</p>
-<p>猫は箱（はこ）の中にいます。　猫在箱子里。</p>
-<p>売店（ばいてん）は駅（えき）の外あります。　小卖部在车站的外边。</p>
-</blockquote>
-<h2 id="4-ね"><a href="#4-ね" class="headerlink" title="4. ね"></a>4. ね</h2><ul>
-<li>当说话人就某事征求听话人的同意时，句尾用助词“ね”，读升调</li>
-</ul>
-<blockquote>
-<p>あそこに犬がいますね。　那儿有一只狗啊。</p>
-<p>この新聞は林さんのですね。　这报纸是林先生的吧。</p>
-<p>駅の前に銀行（ぎんこう）がありますね。　车站前面有家银行吧。</p>
-</blockquote>
-<h2 id="5-疑问词-も-动（否定）"><a href="#5-疑问词-も-动（否定）" class="headerlink" title="5. 疑问词 + も + 动（否定）"></a>5. 疑问词 + も + 动（否定）</h2><ul>
-<li>表示全面否定</li>
-</ul>
-<blockquote>
-<p>教室（きょうしつ）に誰もいません。　教室里谁也没有。</p>
-<p>冷蔵庫（れいぞうこ）なにもありません。　冰箱里什么也没有。</p>
-</blockquote>
-<h2 id="6-ええと"><a href="#6-ええと" class="headerlink" title="6. ええと"></a>6. ええと</h2><ul>
-<li>“ええと”是被别人问及某事，思考该如何回答时说的话</li>
-</ul>
-<blockquote>
-<p>小野さん、会社はどこにありません。</p>
-<p>ええと、ここです。　(嗯……在这儿)</p>
-</blockquote>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00a596">日本語</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/17/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E5%9B%9B%EF%BC%89/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/16/2023SemesterFall/">
-        <h2 class="post-title">2023SemesterFall</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/16
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <ul>
-<li>No time for sorrow, we’re building tomorrow.</li>
-</ul>
-<h1 id="2023SemesterFall"><a href="#2023SemesterFall" class="headerlink" title="2023SemesterFall"></a>2023SemesterFall</h1><ul>
-<li><input disabled type="checkbox"> <a target="_blank" rel="noopener" href="http://csapp.cs.cmu.edu/">CS: APP</a></li>
-<li><input disabled type="checkbox"> <a target="_blank" rel="noopener" href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/">Linear Algebra</a></li>
-<li><input disabled type="checkbox"> <a target="_blank" rel="noopener" href="https://www.eecs70.org/">Discrete Mathematics and Probability Theory</a></li>
-<li><input disabled type="checkbox"> <a target="_blank" rel="noopener" href="https://sp23.datastructur.es/">Data Structures</a></li>
-<li><input disabled type="checkbox"> <a target="_blank" rel="noopener" href="https://cs193p.sites.stanford.edu/">iOS Develop</a></li>
-</ul>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/milestone/" style="color: #ffa2c4">milestone</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/16/2023SemesterFall/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/09/13/%E4%BA%94%E5%8D%81%E9%9F%B3%E5%9B%B3/">
-        <h2 class="post-title">五十音図</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/9/13
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="五十音図-ごじゅうおんず"><a href="#五十音図-ごじゅうおんず" class="headerlink" title="五十音図(ごじゅうおんず)"></a>五十音図(ごじゅうおんず)</h1><h2 id="平仮名-ひらがな"><a href="#平仮名-ひらがな" class="headerlink" title="平仮名(ひらがな)"></a>平仮名(ひらがな)</h2><table>
-<thead>
-<tr>
-<th></th>
-<th>a</th>
-<th>i</th>
-<th>u</th>
-<th>e</th>
-<th>o</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>a</td>
-<td>あ</td>
-<td>い</td>
-<td>う</td>
-<td>え</td>
-<td>お</td>
-</tr>
-<tr>
-<td>k</td>
-<td>か</td>
-<td>き</td>
-<td>く</td>
-<td>け</td>
-<td>こ</td>
-</tr>
-<tr>
-<td>s</td>
-<td>さ</td>
-<td>し</td>
-<td>す</td>
-<td>せ</td>
-<td>そ</td>
-</tr>
-<tr>
-<td>t</td>
-<td>た</td>
-<td>ち</td>
-<td>つ</td>
-<td>て</td>
-<td>と</td>
-</tr>
-<tr>
-<td>n</td>
-<td>な</td>
-<td>に</td>
-<td>ぬ</td>
-<td>ね</td>
-<td>の</td>
-</tr>
-<tr>
-<td>h</td>
-<td>は</td>
-<td>ひ</td>
-<td>ふ</td>
-<td>へ</td>
-<td>ほ</td>
-</tr>
-<tr>
-<td>m</td>
-<td>ま</td>
-<td>み</td>
-<td>む</td>
-<td>め</td>
-<td>も</td>
-</tr>
-<tr>
-<td>y</td>
-<td>や</td>
-<td></td>
-<td>ゆ</td>
-<td></td>
-<td>よ</td>
-</tr>
-<tr>
-<td>r</td>
-<td>ら</td>
-<td>り</td>
-<td>る</td>
-<td>れ</td>
-<td>ろ</td>
-</tr>
-<tr>
-<td>w</td>
-<td>わ</td>
-<td></td>
-<td></td>
-<td></td>
-<td>を</td>
-</tr>
-</tbody></table>
-<h2 id="片仮名-かたかな"><a href="#片仮名-かたかな" class="headerlink" title="片仮名(かたかな)"></a>片仮名(かたかな)</h2><table>
-<thead>
-<tr>
-<th></th>
-<th>a</th>
-<th>i</th>
-<th>u</th>
-<th>e</th>
-<th>o</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>a</td>
-<td>ア</td>
-<td>イ</td>
-<td>ウ</td>
-<td>エ</td>
-<td>オ</td>
-</tr>
-<tr>
-<td>k</td>
-<td>カ</td>
-<td>キ</td>
-<td>ク</td>
-<td>ケ</td>
-<td>コ</td>
-</tr>
-<tr>
-<td>s</td>
-<td>サ</td>
-<td>シ</td>
-<td>ス</td>
-<td>セ</td>
-<td>ソ</td>
-</tr>
-<tr>
-<td>t</td>
-<td>タ</td>
-<td>チ</td>
-<td>ツ</td>
-<td>テ</td>
-<td>ト</td>
-</tr>
-<tr>
-<td>n</td>
-<td>ナ</td>
-<td>ニ</td>
-<td>ヌ</td>
-<td>ネ</td>
-<td>ノ</td>
-</tr>
-<tr>
-<td>h</td>
-<td>ハ</td>
-<td>ヒ</td>
-<td>フ</td>
-<td>ヘ</td>
-<td>ホ</td>
-</tr>
-<tr>
-<td>m</td>
-<td>マ</td>
-<td>ミ</td>
-<td>ム</td>
-<td>メ</td>
-<td>モ</td>
-</tr>
-<tr>
-<td>y</td>
-<td>ヤ</td>
-<td></td>
-<td>ユ</td>
-<td></td>
-<td>ヨ</td>
-</tr>
-<tr>
-<td>r</td>
-<td>ラ</td>
-<td>リ</td>
-<td>ル</td>
-<td>レ</td>
-<td>ロ</td>
-</tr>
-<tr>
-<td>w</td>
-<td>ワ</td>
-<td></td>
-<td></td>
-<td></td>
-<td>ヲ</td>
-</tr>
-</tbody></table>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #03a9f4">日本語</a>
-        </span>
-        
-    </div>
-    <a href="/2023/09/13/%E4%BA%94%E5%8D%81%E9%9F%B3%E5%9B%B3/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/08/27/ComposingPrograms-I/">
-        <h2 class="post-title">ComposingPrograms-I</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="Chapter1-Building-Abstractions-with-Functions"><a href="#Chapter1-Building-Abstractions-with-Functions" class="headerlink" title="Chapter1: Building Abstractions with Functions"></a>Chapter1: Building Abstractions with Functions</h1><h2 id="1-1-Getting-Started"><a href="#1-1-Getting-Started" class="headerlink" title="1.1 Getting Started"></a>1.1 Getting Started</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/11-getting-started.html">1.1  Getting Started</a></li>
-</ul>
-<h2 id="1-2-Elements-of-Programming"><a href="#1-2-Elements-of-Programming" class="headerlink" title="1.2 Elements of Programming"></a>1.2 Elements of Programming</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/12-elements-of-programming.html">1.2 Elements of Programming</a></li>
-<li>Every powerful language has three mechanisms:<ul>
-<li><strong>primitive expressions and statements</strong>, which represent the simplest building blocks that the language provides,</li>
-<li><strong>means of combination</strong>, by which compound elements are built from simpler ones, and</li>
-<li><strong>means of abstraction</strong>, by which compound elements can be named and manipulated as units.</li>
-</ul>
-</li>
-</ul>
-<h3 id="1-2-1-Expressions"><a href="#1-2-1-Expressions" class="headerlink" title="1.2.1 Expressions"></a>1.2.1 Expressions</h3><ul>
-<li><em>infix</em> notation: a way of writing mathematical expressions where the operator is placed between the operands</li>
-</ul>
-<h3 id="1-2-2-Call-Expressions"><a href="#1-2-2-Call-Expressions" class="headerlink" title="1.2.2 Call Expressions"></a>1.2.2 Call Expressions</h3><ul>
-<li>Some key characteristics of call expressions in Python:<ul>
-<li>The function name comes first, followed by opening and closing parentheses. For example: <code>my_function()</code></li>
-<li>Arguments are passed inside the parentheses separated by commas. For example: <code>my_function(arg1, arg2)</code></li>
-<li>Arguments can include literal values, variables, expressions, etc. For example: <code>my_function(5, x, y+1)</code></li>
-<li>Calling functions executes the code in the function body using the passed arguments.</li>
-<li>The return value from the function is used where the call expression appears. For example: <code>print(my_function(5))</code></li>
-<li>Call expressions can be nested, like <code>func1(func2(arg))</code></li>
-<li>The number of arguments must match the function definition, unless default values are specified.</li>
-<li>Keyword arguments can be used with call expressions for clarity. For example: <code>my_function(arg1=5, arg2=x)</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="1-2-3-Importing-Library-Functions"><a href="#1-2-3-Importing-Library-Functions" class="headerlink" title="1.2.3 Importing Library Functions"></a>1.2.3 Importing Library Functions</h3><ul>
-<li>Python organizes the functions and other quantities that it knows about into modules, which together comprise the Python Library. To use these elements, one imports them.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> operator <span class="keyword">import</span> add, sub, mul</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>add(<span class="number">14</span>, <span class="number">28</span>)</span><br><span class="line"><span class="number">42</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>sub(<span class="number">100</span>, mul(<span class="number">7</span>, add(<span class="number">8</span>, <span class="number">4</span>)))</span><br><span class="line"><span class="number">16</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-4-Names-and-Environment"><a href="#1-2-4-Names-and-Environment" class="headerlink" title="1.2.4 Names and Environment"></a>1.2.4 Names and Environment</h3><ul>
-<li><p>assignment operator <code>=</code> allows us to use names to refer to computational objects</p>
-</li>
-<li><p>names are also bound via import statements</p>
-</li>
-<li><p>Python evaluates the expression to the right of <code>=</code> before changing the binding to the name on the left. </p>
-</li>
-<li><p>Changing the value of one name does not affect other names.</p>
-</li>
-<li><p>An environment is a mapping of names to objects. For example, a function has its own local environment that maps the names of its parameters to objects.</p>
-</li>
-<li><p>Each environment has its own lifetime - for example, local environments are created when a function is called and destroyed when it returns.</p>
-</li>
-</ul>
-<h3 id="1-2-5-Evaluating-Nested-Expressions"><a href="#1-2-5-Evaluating-Nested-Expressions" class="headerlink" title="1.2.5 Evaluating Nested Expressions"></a>1.2.5 Evaluating Nested Expressions</h3><ul>
-<li>To evaluate a call expression, Python will do the following:<ol>
-<li>Evaluate the operator and operand subexpressions, then</li>
-<li>Apply the function that is the value of the operator subexpression to the arguments that are the values of the operand subexpressions.</li>
-</ol>
-</li>
-</ul>
-<h3 id="1-2-6-The-Non-Pure-Print-Function"><a href="#1-2-6-The-Non-Pure-Print-Function" class="headerlink" title="1.2.6 The Non-Pure Print Function"></a>1.2.6 The Non-Pure Print Function</h3><ul>
-<li><strong>Pure functions.</strong> Functions have some input (their arguments) and return some output (the result of applying them). Pure functions have the property that applying them has no effects beyond returning a value. Moreover, a pure function must always return the same value when called twice with the same arguments.</li>
-<li><strong>Non-pure functions.</strong> In addition to returning a value, applying a non-pure function can generate <em>side effects</em>, which make some change to the state of the interpreter or computer. A common side effect is to generate additional output beyond the return value, using the <code>print</code> function.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">print</span>(<span class="built_in">print</span>(<span class="number">1</span>), <span class="built_in">print</span>(<span class="number">2</span>))</span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="literal">None</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="1-3-Defining-New-Functions"><a href="#1-3-Defining-New-Functions" class="headerlink" title="1.3 Defining New Functions"></a>1.3 Defining New Functions</h2><ul>
-<li><p><a target="_blank" rel="noopener" href="https://www.composingprograms.com/pages/13-defining-new-functions.html">Defining New Functions</a></p>
-</li>
-<li><p><strong>How to define a function.</strong> Function definitions consist of a <code>def</code> statement that indicates a <code>&lt;name&gt;</code> and a comma-separated list of named <code>&lt;formal parameters&gt;</code>, then a <code>return</code> statement, called the function body, that specifies the <code>&lt;return expression&gt;</code> of the function, which is an expression to be evaluated whenever the function is applied:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> &lt;name&gt;(&lt;formal parameters&gt;):</span><br><span class="line">    <span class="keyword">return</span> &lt;<span class="keyword">return</span> expression&gt;</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="1-3-1-Environments"><a href="#1-3-1-Environments" class="headerlink" title="1.3.1 Environments"></a>1.3.1 Environments</h3><ul>
-<li>An environment in which an expression is evaluated consists of a sequence of <em>frames</em>, each frame contains <em>bindings</em>, each of which associates a name with its corresponding value. There is a single <em>global</em> frame. Assignment and import statements add entries to the first frame of the current environment. </li>
-<li><strong>Function Signatures.</strong> Functions differ in the number of arguments that they are allowed to take. To track these requirements, we draw each function in a way that shows the function name and its formal parameters. The user-defined function <code>square</code> takes only <code>x</code>; providing more or fewer arguments will result in an error. A description of the formal parameters of a function is called the function’s signature.</li>
-</ul>
-<h3 id="1-3-2-Calling-User-Defined-Functions"><a href="#1-3-2-Calling-User-Defined-Functions" class="headerlink" title="1.3.2 Calling User-Defined Functions"></a>1.3.2 Calling User-Defined Functions</h3><ul>
-<li>Applying a user-defined function introduces a second <em>local</em> frame, which is only accessible to that function. To apply a user-defined function to some arguments:<ol>
-<li>Bind the arguments to the names of the function’s formal parameters in a new <em>local</em> frame.</li>
-<li>Execute the body of the function in the environment that starts with this frame.</li>
-</ol>
-</li>
-<li><strong>Name Evaluation.</strong> A name evaluates to the value bound to that name in the earliest frame of the current environment in which that name is found.</li>
-</ul>
-<h3 id="1-3-4-Local-Names"><a href="#1-3-4-Local-Names" class="headerlink" title="1.3.4 Local Names"></a>1.3.4 Local Names</h3><ul>
-<li>The <em>scope</em> of a local name is limited to the body of the user-defined function that defines it. When a name is no longer accessible, it is out of scope.</li>
-</ul>
-<h3 id="1-3-5-Choosing-Names"><a href="#1-3-5-Choosing-Names" class="headerlink" title="1.3.5 Choosing Names"></a>1.3.5 Choosing Names</h3><ul>
-<li>a guide for all (non-rebellious) Python programmers:</li>
-</ul>
-<ol>
-<li>Function names are lowercase, with words separated by underscores. Descriptive names are encouraged.</li>
-<li>Function names typically evoke operations applied to arguments by the interpreter (e.g., <code>print</code>, <code>add</code>, <code>square</code>) or the name of the quantity that results (e.g., <code>max</code>, <code>abs</code>, <code>sum</code>).</li>
-<li>Parameter names are lowercase, with words separated by underscores. Single-word names are preferred.</li>
-<li>Parameter names should evoke the role of the parameter in the function, not just the kind of argument that is allowed.</li>
-<li>Single letter parameter names are acceptable when their role is obvious, but avoid “l” (lowercase ell), “O” (capital oh), or “I” (capital i) to avoid confusion with numerals.</li>
-</ol>
-<h3 id="1-3-6-Functions-as-Abstractions"><a href="#1-3-6-Functions-as-Abstractions" class="headerlink" title="1.3.6  Functions as Abstractions"></a>1.3.6  Functions as Abstractions</h3><ul>
-<li><strong>Aspects of a functional abstraction.</strong> To master the use of a functional abstraction, it is often useful to consider its three core attributes. The <em>domain</em> of a function is the set of arguments it can take. The <em>range</em> of a function is the set of values it can return. The <em>intent</em> of a function is the relationship it computes between inputs and output (as well as any side effects it might generate). Understanding functional abstractions via their domain, range, and intent is critical to using them correctly in a complex program.</li>
-</ul>
-<hr>
-<ul>
-<li>计划有变，暂缓进程</li>
-</ul>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Python/" style="color: #03a9f4">Python</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/ComposingPrograms/" style="color: #00bcd4">ComposingPrograms</a>
-        </span>
-        
-    </div>
-    <a href="/2023/08/27/ComposingPrograms-I/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/08/23/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/">
-        <h2 class="post-title">日本語文法（三）</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/23
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="日本語文法（三）"><a href="#日本語文法（三）" class="headerlink" title="日本語文法（三）"></a>日本語文法（三）</h1><h2 id="1-ここ、そこ、あそこ-は-名-です"><a href="#1-ここ、そこ、あそこ-は-名-です" class="headerlink" title="1.ここ、そこ、あそこ　は　名　です"></a>1.ここ、そこ、あそこ　は　名　です</h2><ul>
-<li>用于指示场所，相对位置关系与これ、それ、あれ相同</li>
-</ul>
-<blockquote>
-<p>ここはデパート（でぱあと）です。　这是百货商店。</p>
-<p>そこは図書館（としょかん）です。	那里是图书馆。</p>
-<p>あそこは入り口（いりくち）です。　那儿是入口。</p>
-</blockquote>
-<h2 id="2-名-は-名-场所-です"><a href="#2-名-は-名-场所-です" class="headerlink" title="2.名　は　名[场所]　です"></a>2.名　は　名[场所]　です</h2><ul>
-<li>表示“名词”存在于“名词[场所]”中</li>
-</ul>
-<blockquote>
-<p>食堂（しょくどう）はデパートの七階（かい）です。　食堂在百货商店的7层。</p>
-<p>トイレ（といれ）はここです。　厕所在这里。</p>
-<p>小野（おの）さんは事務所（じむしょ）です。　小野女士在事务所。</p>
-</blockquote>
-<h2 id="3-名-は-どこですか"><a href="#3-名-は-どこですか" class="headerlink" title="3.名　は　どこですか"></a>3.名　は　どこですか</h2><ul>
-<li>用于询问存在的场所</li>
-</ul>
-<blockquote>
-<p>トイレはどこですか。　厕所在哪里？</p>
-<p>あちらです。　在那儿。</p>
-<p>あなたのかばんはどこですか。　你的包在哪里？</p>
-<p>私のかばんはここです。　我的包在这里。</p>
-</blockquote>
-<h2 id="4-名-も-名-です"><a href="#4-名-も-名-です" class="headerlink" title="4.名　も　名　です"></a>4.名　も　名　です</h2><ul>
-<li>“も”相当于汉语中的“也”</li>
-</ul>
-<blockquote>
-<p>李さんは中国人です。　小李是中国人。</p>
-<p>張（ちょう）さんも中国人です。　小张也是中国人。</p>
-<p>あなたも中国人です。	 你也是中国人吗？</p>
-</blockquote>
-<h2 id="5-名-は-名ですか、-名ですか"><a href="#5-名-は-名ですか、-名ですか" class="headerlink" title="5.名　は　名ですか、　名ですか"></a>5.名　は　名ですか、　名ですか</h2><ul>
-<li>选择疑问句</li>
-</ul>
-<blockquote>
-<p>かばん売り場（うりば）は一階ですか、2階ですか。　卖包的柜台在一层还是二层？</p>
-<p>今日（きょう）は水曜日（すいようび）ですか、木曜日（もくようび）ですか。　今天是星期三还是星期四？</p>
-</blockquote>
-<h2 id="6-名-は-いくらですか"><a href="#6-名-は-いくらですか" class="headerlink" title="6.名　は　いくらですか"></a>6.名　は　いくらですか</h2><ul>
-<li>询问价钱</li>
-</ul>
-<blockquote>
-<p>これはいくらですか。　这个多少钱？</p>
-<p>その服（ふく）はいくらですか。　那件衣服多少钱？</p>
-</blockquote>
-<h2 id="7-100以上的数字"><a href="#7-100以上的数字" class="headerlink" title="7.100以上的数字"></a>7.100以上的数字</h2><table>
-<thead>
-<tr>
-<th align="center">number</th>
-<th align="center">名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">100</td>
-<td align="center">ひゃく</td>
-</tr>
-<tr>
-<td align="center">200</td>
-<td align="center">にひゃく</td>
-</tr>
-<tr>
-<td align="center">300</td>
-<td align="center">さんびゃく</td>
-</tr>
-<tr>
-<td align="center">400</td>
-<td align="center">よんひゃく</td>
-</tr>
-<tr>
-<td align="center">500</td>
-<td align="center">ごひゃく</td>
-</tr>
-<tr>
-<td align="center">600</td>
-<td align="center">ろくぴゃく</td>
-</tr>
-<tr>
-<td align="center">700</td>
-<td align="center">ななひゃく</td>
-</tr>
-<tr>
-<td align="center">800</td>
-<td align="center">はっぴゃく</td>
-</tr>
-<tr>
-<td align="center">900</td>
-<td align="center">きゅうひゃく</td>
-</tr>
-<tr>
-<td align="center">1000</td>
-<td align="center">せん</td>
-</tr>
-<tr>
-<td align="center">2000</td>
-<td align="center">にせん</td>
-</tr>
-<tr>
-<td align="center">3000</td>
-<td align="center">さんぜん</td>
-</tr>
-<tr>
-<td align="center">4000</td>
-<td align="center">よんせん</td>
-</tr>
-<tr>
-<td align="center">5000</td>
-<td align="center">ごせん</td>
-</tr>
-<tr>
-<td align="center">6000</td>
-<td align="center">ろくせん</td>
-</tr>
-<tr>
-<td align="center">7000</td>
-<td align="center">ななせん</td>
-</tr>
-<tr>
-<td align="center">8000</td>
-<td align="center">はっせん</td>
-</tr>
-<tr>
-<td align="center">9000</td>
-<td align="center">きゅうせん</td>
-</tr>
-<tr>
-<td align="center">10000</td>
-<td align="center">いちまん</td>
-</tr>
-<tr>
-<td align="center">100000</td>
-<td align="center">じゅうまん</td>
-</tr>
-<tr>
-<td align="center">1000000</td>
-<td align="center">ひゃくまん</td>
-</tr>
-<tr>
-<td align="center">10000000</td>
-<td align="center">いっせんまん</td>
-</tr>
-<tr>
-<td align="center">100000000</td>
-<td align="center">いちおく</td>
-</tr>
-<tr>
-<td align="center">9002</td>
-<td align="center">きゅうせんに</td>
-</tr>
-<tr>
-<td align="center">9020</td>
-<td align="center">きゅうせんにじゅう</td>
-</tr>
-<tr>
-<td align="center">9200</td>
-<td align="center">きゅうせんにひゃく</td>
-</tr>
-</tbody></table>
-<h2 id="8-こちら、そちら、あちら、どちら"><a href="#8-こちら、そちら、あちら、どちら" class="headerlink" title="8.こちら、そちら、あちら、どちら"></a>8.こちら、そちら、あちら、どちら</h2><ul>
-<li>分别是ここ、そこ、あそこ、どこ的礼貌用语</li>
-</ul>
-<blockquote>
-<p>受付（うけつけ）はどこですか。　接待处在哪里？</p>
-<p>あそこです。　在那儿。</p>
-<p>受付はどちらですか。　接待处在哪里？</p>
-<p>あちらです。　在那里。</p>
-</blockquote>
-<h2 id="9-お国（くに）はどちらですか-会社（かいしゃ）はどちらですか"><a href="#9-お国（くに）はどちらですか-会社（かいしゃ）はどちらですか" class="headerlink" title="9.お国（くに）はどちらですか　会社（かいしゃ）はどちらですか"></a>9.お国（くに）はどちらですか　会社（かいしゃ）はどちらですか</h2><ul>
-<li>询问来自哪一国家时，使用国はどちらですか，国前加お更礼貌</li>
-</ul>
-<blockquote>
-<p>会社どちらですか。</p>
-<p>你的公司在哪里？&#x2F; 你是哪个公司的？</p>
-</blockquote>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00a596">日本語</a>
-        </span>
-        
-    </div>
-    <a href="/2023/08/23/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%B8%89%EF%BC%89/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/08/20/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/">
-        <h2 class="post-title">日本語文法（二）</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/20
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="日本語文法（二）"><a href="#日本語文法（二）" class="headerlink" title="日本語文法（二）"></a>日本語文法（二）</h1><h2 id="1-これ、それ、あれ-は-名-です"><a href="#1-これ、それ、あれ-は-名-です" class="headerlink" title="1.これ、それ、あれ　は　名　です"></a>1.これ、それ、あれ　は　名　です</h2><ul>
-<li>说话人和听话人相隔一段距高， 面对面时：<ul>
-<li>これ：距说话人较近的事物[说话人的范围、领域内的事物]</li>
-<li>それ：距听话人较近的事物[听话人的范围、领城内的事物]</li>
-<li>あれ：距说话人和听话人都比较远的事物[不属于任何一方范围、领域内的事物]</li>
-</ul>
-</li>
-<li>说话人和听话人位于同一位置，面向同一方向时:<ul>
-<li>距说话人、听话人较近的事物</li>
-<li>距说话人、听话人较远的事物</li>
-<li>距说话人、听话人更远的事物</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>これは本（ほん）です。	这是书。</p>
-<p>それはかばんです。	那是包。</p>
-<p>あれはテレビ（てれび）です。	那是电视机。</p>
-</blockquote>
-<h2 id="2-誰ですか、何ですか"><a href="#2-誰ですか、何ですか" class="headerlink" title="2.誰ですか、何ですか"></a>2.誰ですか、何ですか</h2><ul>
-<li>分别相当于汉语的 <strong>是谁</strong> 和 <strong>是什么</strong></li>
-</ul>
-<blockquote>
-<p>それは何ですか。	那是什么？</p>
-<p>あの人誰ですか。	那个人是谁？</p>
-</blockquote>
-<ul>
-<li>だれ　的比较礼貌的说法是　どなた<ul>
-<li>だれ　通常用手対方与自己地位相当或比自己地位低时</li>
-<li>对尊长或比自己地位高的人用　どなた　询问</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>李さんはどなたですか。	李先生是哪一位？</p>
-</blockquote>
-<h2 id="3-この、その、あの-名-は-名-です"><a href="#3-この、その、あの-名-は-名-です" class="headerlink" title="3.この、その、あの　名　は　名　です"></a>3.この、その、あの　名　は　名　です</h2><ul>
-<li>修饰名词的所属关系，相对位置关系与　これ、それ、あれ　相同</li>
-</ul>
-<blockquote>
-<p>このカメラ（かめら）は李さんのです。　这个照相机是李先生的。</p>
-<p>その自転車（自転車）は森さんのです。　那辆自行车是森先生的。</p>
-<p>あのノート（のうと）は誰のですか。　那个笔记本是谁的？</p>
-</blockquote>
-<h2 id="4-どれ、どの-名"><a href="#4-どれ、どの-名" class="headerlink" title="4.どれ、どの　名"></a>4.どれ、どの　名</h2><ul>
-<li>どれ、どの　是在三个以上的事物中，不能确定是哪一个时所用的疑问词</li>
-</ul>
-<blockquote>
-<p>森さんのかばんどれはですか。　森先生的包是哪个?</p>
-<p>長島さんの傘（かさ）はどれですか。　长岛先生的伞是哪一把?</p>
-<p>小野さんの机（つくえ）はどの机ですか。　小野女士的桌子是哪一张？</p>
-</blockquote>
-<h2 id="5-100以下的数字"><a href="#5-100以下的数字" class="headerlink" title="5.100以下的数字"></a>5.100以下的数字</h2><table>
-<thead>
-<tr>
-<th align="center">number</th>
-<th align="center">名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">０</td>
-<td align="center">れい、ぜろ</td>
-</tr>
-<tr>
-<td align="center">１</td>
-<td align="center">いち</td>
-</tr>
-<tr>
-<td align="center">２</td>
-<td align="center">に</td>
-</tr>
-<tr>
-<td align="center">３</td>
-<td align="center">さん</td>
-</tr>
-<tr>
-<td align="center">４</td>
-<td align="center">し、よん</td>
-</tr>
-<tr>
-<td align="center">５</td>
-<td align="center">ご</td>
-</tr>
-<tr>
-<td align="center">６</td>
-<td align="center">ろく</td>
-</tr>
-<tr>
-<td align="center">７</td>
-<td align="center">しち、なな</td>
-</tr>
-<tr>
-<td align="center">８</td>
-<td align="center">はち</td>
-</tr>
-<tr>
-<td align="center">９</td>
-<td align="center">く、きゅう</td>
-</tr>
-<tr>
-<td align="center">１０</td>
-<td align="center">じゅう</td>
-</tr>
-<tr>
-<td align="center">１１</td>
-<td align="center">じゅういち</td>
-</tr>
-<tr>
-<td align="center">１２</td>
-<td align="center">じゅうに</td>
-</tr>
-<tr>
-<td align="center">１３</td>
-<td align="center">じゅうさん</td>
-</tr>
-<tr>
-<td align="center">１４</td>
-<td align="center">じゅうし、じゅうよん</td>
-</tr>
-<tr>
-<td align="center">１５</td>
-<td align="center">じゅうご</td>
-</tr>
-<tr>
-<td align="center">１６</td>
-<td align="center">じゅうろく</td>
-</tr>
-<tr>
-<td align="center">１７</td>
-<td align="center">じゅうしち、じゅうなな</td>
-</tr>
-<tr>
-<td align="center">１８</td>
-<td align="center">じゅうはち</td>
-</tr>
-<tr>
-<td align="center">１９</td>
-<td align="center">じゅうく、じゅうきゅう</td>
-</tr>
-<tr>
-<td align="center">２０</td>
-<td align="center">にじゅう</td>
-</tr>
-<tr>
-<td align="center">３０</td>
-<td align="center">さんじゅう</td>
-</tr>
-<tr>
-<td align="center">４０</td>
-<td align="center">しじゅう</td>
-</tr>
-<tr>
-<td align="center">５０</td>
-<td align="center">ごじゅう</td>
-</tr>
-<tr>
-<td align="center">６０</td>
-<td align="center">ろくじゅう</td>
-</tr>
-<tr>
-<td align="center">７０</td>
-<td align="center">しちじゅう、ななじゅう</td>
-</tr>
-<tr>
-<td align="center">８０</td>
-<td align="center">はちじゅう</td>
-</tr>
-<tr>
-<td align="center">９０</td>
-<td align="center">くじゅう、きゅうじゅう</td>
-</tr>
-<tr>
-<td align="center">１００</td>
-<td align="center">ひゃく</td>
-</tr>
-<tr>
-<td align="center">0.1</td>
-<td align="center">れいてんいち</td>
-</tr>
-<tr>
-<td align="center">2&#x2F;3</td>
-<td align="center">さんぶんのに</td>
-</tr>
-</tbody></table>
-<h2 id="6-片"><a href="#6-片" class="headerlink" title="6.片"></a>6.片</h2><ul>
-<li>この、その、あの人　改为　この、その、あの片（かた）　更加礼貌</li>
-</ul>
-<blockquote>
-<p>あの方は田中さんです。	那位是田中先生。</p>
-<p>日本人ですか。	是日本人吗？</p>
-<p>日本の方ですか。　是日本人吗？</p>
-</blockquote>
-<h2 id="7-何歳ですか"><a href="#7-何歳ですか" class="headerlink" title="7.何歳ですか"></a>7.何歳ですか</h2><ul>
-<li>使用　何歳ですか、おいくつですか（更礼貌）询问年龄</li>
-<li>询问孩子时，直接使用　何歳、幾つ（いくつ）</li>
-</ul>
-<h2 id="8-どうぞ"><a href="#8-どうぞ" class="headerlink" title="8.どうぞ"></a>8.どうぞ</h2><ul>
-<li>用于给对方物品， 或劝对方进餐。</li>
-</ul>
-<blockquote>
-<p>これは中国の名産品です。どうぞ。	这是中国有名的特产，请收下。</p>
-</blockquote>
-<h2 id="9-亲属的称谓"><a href="#9-亲属的称谓" class="headerlink" title="9.亲属的称谓"></a>9.亲属的称谓</h2><table>
-<thead>
-<tr>
-<th align="center">自己的亲属</th>
-<th align="center">别人的亲属</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">祖父（そふ）</td>
-<td align="center">おじいさん</td>
-</tr>
-<tr>
-<td align="center">祖母（そぼ）</td>
-<td align="center">おばあさん</td>
-</tr>
-<tr>
-<td align="center">両親（りょうしん）</td>
-<td align="center">ご両親</td>
-</tr>
-<tr>
-<td align="center">父（ちち）</td>
-<td align="center">お父さん</td>
-</tr>
-<tr>
-<td align="center">母（はは）</td>
-<td align="center">お母さん</td>
-</tr>
-<tr>
-<td align="center">息子（むすこ）</td>
-<td align="center">息子さん</td>
-</tr>
-<tr>
-<td align="center">娘（むすめ）</td>
-<td align="center">娘さん、お嬢さん（おじょうさん）</td>
-</tr>
-<tr>
-<td align="center">兄弟（きょうだい）</td>
-<td align="center">ご兄弟</td>
-</tr>
-<tr>
-<td align="center">兄（あに）</td>
-<td align="center">お兄さん</td>
-</tr>
-<tr>
-<td align="center">姉（あね）</td>
-<td align="center">お姉さん</td>
-</tr>
-<tr>
-<td align="center">弟（おとうと）</td>
-<td align="center">弟さん</td>
-</tr>
-<tr>
-<td align="center">妹（いもうと）</td>
-<td align="center">妹さん</td>
-</tr>
-<tr>
-<td align="center">叔父（おじ）</td>
-<td align="center">おじさん</td>
-</tr>
-<tr>
-<td align="center">叔母（おば）</td>
-<td align="center">おばさん</td>
-</tr>
-</tbody></table>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/" style="color: #00a596">日本語</a>
-        </span>
-        
-    </div>
-    <a href="/2023/08/20/%E6%97%A5%E6%9C%AC%E8%AA%9E%E6%96%87%E6%B3%95%EF%BC%88%E4%BA%8C%EF%BC%89/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2023/08/10/VimOverview/">
-        <h2 class="post-title">VimOverview</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/10
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h1 id="Vim-Overview"><a href="#Vim-Overview" class="headerlink" title="Vim Overview"></a>Vim Overview</h1><ul>
-<li>本篇文章以vimtutor为大纲，更多内容参见<a target="_blank" rel="noopener" href="https://www.vim.org/docs.php">Vim Documentation</a></li>
-</ul>
-<h2 id="第一讲"><a href="#第一讲" class="headerlink" title="第一讲"></a>第一讲</h2><h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><blockquote>
-<p>​		  ^</p>
-<p>​		  k</p>
-<p>&lt; h    		l &gt;</p>
-<p>​		  j</p>
-<p>​		  v</p>
-</blockquote>
-<h3 id="Vim的进入与退出"><a href="#Vim的进入与退出" class="headerlink" title="Vim的进入与退出"></a>Vim的进入与退出</h3><blockquote>
-<p>:q!</p>
-<p>放弃所有改动并退出</p>
-</blockquote>
-<h3 id="文本编辑之删除"><a href="#文本编辑之删除" class="headerlink" title="文本编辑之删除"></a>文本编辑之删除</h3><blockquote>
-<p>x</p>
-<p>删除光标所在位置的字符</p>
-</blockquote>
-<h3 id="文本编辑之插入"><a href="#文本编辑之插入" class="headerlink" title="文本编辑之插入"></a>文本编辑之插入</h3><blockquote>
-<p>i</p>
-<p>在光标前插入文本</p>
-</blockquote>
-<h3 id="文本编辑之添加"><a href="#文本编辑之添加" class="headerlink" title="文本编辑之添加"></a>文本编辑之添加</h3><blockquote>
-<p>A</p>
-<p>在行末添加内容</p>
-</blockquote>
-<h3 id="编辑文件"><a href="#编辑文件" class="headerlink" title="编辑文件"></a>编辑文件</h3><blockquote>
-<p>:wq</p>
-<p>保存改动并退出</p>
-</blockquote>
-<h2 id="第二讲"><a href="#第二讲" class="headerlink" title="第二讲"></a>第二讲</h2><h3 id="删除类命令"><a href="#删除类命令" class="headerlink" title="删除类命令"></a>删除类命令</h3><blockquote>
-<p>dw</p>
-<p>从当前光标当前位置直到下一个单词起始处，不包括它的第一个字符</p>
-<p>d$</p>
-<p>从当前光标当前位置直到单词末尾，包括最后一个字符</p>
-<p>de</p>
-<p>从当前光标当前位置直到当前行末</p>
-<p>dd</p>
-<p>删除整一个当前行</p>
-</blockquote>
-<h3 id="使用计数指定动作"><a href="#使用计数指定动作" class="headerlink" title="使用计数指定动作"></a>使用计数指定动作</h3><blockquote>
-<p>operator  [number]  motion</p>
-<p>重复操作一定次数操作对象</p>
-</blockquote>
-<h3 id="移动光标-1"><a href="#移动光标-1" class="headerlink" title="移动光标"></a>移动光标</h3><blockquote>
-<p>0</p>
-<p>移动光标到行首</p>
-</blockquote>
-<h3 id="撤销类命令"><a href="#撤销类命令" class="headerlink" title="撤销类命令"></a>撤销类命令</h3><blockquote>
-<p>u</p>
-<p>撤消以前的操作</p>
-<p>U</p>
-<p>撤消在一行中所做的改动</p>
-<p>CTRL-R</p>
-<p>撤消以前的撤消命令，恢复以前的操作结果</p>
-</blockquote>
-<h2 id="第三讲"><a href="#第三讲" class="headerlink" title="第三讲"></a>第三讲</h2><h3 id="置入类命令"><a href="#置入类命令" class="headerlink" title="置入类命令"></a>置入类命令</h3><blockquote>
-<p>p</p>
-<p>将最后一次删除的内容置入光标之后</p>
-</blockquote>
-<h3 id="替换类命令"><a href="#替换类命令" class="headerlink" title="替换类命令"></a>替换类命令</h3><blockquote>
-<p>r</p>
-<p>输入r和一个字符替换光标所在位置的字符</p>
-</blockquote>
-<h3 id="更改类命令"><a href="#更改类命令" class="headerlink" title="更改类命令"></a>更改类命令</h3><blockquote>
-<p>ce</p>
-<p>改变文本直到一个单词的末尾</p>
-<p>c  [NUMBER]  MOTION</p>
-<p>改变一定数量的操作对象</p>
-<p>c$</p>
-<p>改变光标后的整行</p>
-</blockquote>
-<h2 id="第四讲"><a href="#第四讲" class="headerlink" title="第四讲"></a>第四讲</h2><h3 id="定位及文件状态"><a href="#定位及文件状态" class="headerlink" title="定位及文件状态"></a>定位及文件状态</h3><blockquote>
-<p>CTRL-G</p>
-<p>显示当前编辑文件中当前光标所在行位置以及文件状态信息</p>
-<p>G</p>
-<p>光标跳转到文件最后一行</p>
-<p>gg</p>
-<p>光标跳转到文件第一行</p>
-<p>[number] G</p>
-<p>跳转到对应行</p>
-</blockquote>
-<h3 id="搜索类命令"><a href="#搜索类命令" class="headerlink" title="搜索类命令"></a>搜索类命令</h3><blockquote>
-<p>&#x2F;</p>
-<p>输入 &#x2F; 加上一个字符串可以在当前文件中查找该字符串</p>
-<p>输入n即可正向遍历该字符串，输入N即可逆向遍历该字符串</p>
-<p>?&#x2F;</p>
-<p>输入 ?&#x2F; 加上一个字符串可以从文件末尾开始查找该字符串</p>
-<p>CTRL-O</p>
-<p>CTRL-I</p>
-</blockquote>
-<h3 id="配对括号的查找"><a href="#配对括号的查找" class="headerlink" title="配对括号的查找"></a>配对括号的查找</h3><blockquote>
-<p>%</p>
-<p>查找配对的括号	)	]	}</p>
-</blockquote>
-<h3 id="替换命令"><a href="#替换命令" class="headerlink" title="替换命令"></a>替换命令</h3><blockquote>
-<p>:s&#x2F;old&#x2F;new</p>
-<p>只将光标所在行的第一个匹配串进行替换</p>
-<p>:s&#x2F;old&#x2F;new</p>
-<p>替换全行的匹配串</p>
-<p>:[number],[number]s&#x2F;old&#x2F;new&#x2F;g</p>
-<p>替换若干行间的匹配串</p>
-<p>:%s&#x2F;old&#x2F;new&#x2F;g</p>
-<p>替换整个文件中的匹配串</p>
-<p>:%s&#x2F;old&#x2F;new&#x2F;gc</p>
-<p>找到整个文件中的每个匹配串，并且询问是否进行替换</p>
-</blockquote>
-<h2 id="第五讲"><a href="#第五讲" class="headerlink" title="第五讲"></a>第五讲</h2><h3 id="在Vim内执行外部命令的方法"><a href="#在Vim内执行外部命令的方法" class="headerlink" title="在Vim内执行外部命令的方法"></a>在Vim内执行外部命令的方法</h3><blockquote>
-<p>:! <em>COMMAND</em></p>
-<p>输入 :! 然后紧接着输入一个外部命令可以执行该外部命令</p>
-</blockquote>
-<h3 id="保存文件"><a href="#保存文件" class="headerlink" title="保存文件"></a>保存文件</h3><blockquote>
-<p>:w FILENAME</p>
-<p>将对文件的改动保存到文件中</p>
-<p>v motion :w FILENAME</p>
-<p>保存文件的部分内容</p>
-</blockquote>
-<h3 id="提取和合并文件"><a href="#提取和合并文件" class="headerlink" title="提取和合并文件"></a>提取和合并文件</h3><blockquote>
-<p>:r FILENAME</p>
-<p>向当前文件中插入另外的文件的内容</p>
-</blockquote>
-<h2 id="第六讲"><a href="#第六讲" class="headerlink" title="第六讲"></a>第六讲</h2><h3 id="打开类命令"><a href="#打开类命令" class="headerlink" title="打开类命令"></a>打开类命令</h3><blockquote>
-<p>o</p>
-<p>输入 o 将在光标的下方打开新的一行并进入插入模式</p>
-<p>O</p>
-<p>输入 O 将在光标的上方打开新的一行并进入插入模式</p>
-</blockquote>
-<h3 id="附加类命令"><a href="#附加类命令" class="headerlink" title="附加类命令"></a>附加类命令</h3><blockquote>
-<p>a</p>
-<p>输入a可在光标之后插入文字</p>
-</blockquote>
-<h3 id="置换类命令"><a href="#置换类命令" class="headerlink" title="置换类命令"></a>置换类命令</h3><blockquote>
-<p>R</p>
-<p>可连续替换多个字符</p>
-</blockquote>
-<h3 id="复制粘贴文本"><a href="#复制粘贴文本" class="headerlink" title="复制粘贴文本"></a>复制粘贴文本</h3><blockquote>
-<p>y</p>
-<p>复制文本</p>
-<p>p</p>
-<p>粘贴文本</p>
-</blockquote>
-<h3 id="设置类命令"><a href="#设置类命令" class="headerlink" title="设置类命令"></a>设置类命令</h3><blockquote>
-<p>:set <em>SETTING</em></p>
-<p>设置选项</p>
-</blockquote>
-<h2 id="第七讲"><a href="#第七讲" class="headerlink" title="第七讲"></a>第七讲</h2><h3 id="获取帮助信息"><a href="#获取帮助信息" class="headerlink" title="获取帮助信息"></a>获取帮助信息</h3><blockquote>
-<p>:help <em>COMMAND</em></p>
-<p>获取<em>COMMAND</em>相关帮助</p>
-<p>:q</p>
-<p>退出帮助</p>
-</blockquote>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul>
-<li>以上仅为vimtutor的部分内容，要想掌握vim，还得是熟能生巧，以上。</li>
-</ul>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/Overview/" style="color: #03a9f4">Overview</a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/Vim/" style="color: #03a9f4">Vim</a>
-        </span>
-        
-    </div>
-    <a href="/2023/08/10/VimOverview/" class="go-post">阅读全文</a>
-</div>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
-        <div class="page-current">
-    <div class="prev">
-        
-    </div>
-    <div class="page-index">
-        
-        <span class="current">1</span>
-        
-        <span>
-            <a class="page-num" href="/page/2/">2</a>
-            
-            
-        </span>
-        
-    </div>
-    <div class="next">
-        
-        <a class="page-num" href="/page/2/">
-            <i class="fa-solid fa-caret-right fa-fw"></i>
-        </a>
-        
-    </div>
-</div>
 
-    </div>
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"taxuslor.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">taxuslor</div>
-        <div class="description">
-            <p>本科在读，懒狗一枚</p>
 
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Taxuslor</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="一两手札"></span>
+          
         </div>
+
         
-            <div class="icon-links">
-                
-                  <span class="icon-link">
-                    <a target="_blank" rel="noopener" href="https://github.com/taxuslor">
-                      <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>
-                  </span>
-                
-                  <span class="icon-link">
-                    <a target="_blank" rel="noopener" href="https://twitter.com/taxuslor">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                  </span>
-                
-              </div> 
-        
-        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
 </div>
-    </div>
+
+</div>
+
+  </header>
+
+  <main>
     
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/11/12/Link-Start-%E2%80%94%E2%80%94-%E6%89%8B%E6%9C%AD%E5%85%B6%E4%B8%80/" target="_self">
+          Link Start! —— 手札其一
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/11/12/Link-Start-%E2%80%94%E2%80%94-%E6%89%8B%E6%9C%AD%E5%85%B6%E4%B8%80/" target="_self">
+        <div>
+          
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-11-12 17:00" pubdate>
+              2023-11-12
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
-                <footer id="footer">
-    <div id="footer-wrap">
-        <div>
-            &copy;
-            2023 - 2023 taxuslorの日日新
-            <span id="footer-icon">
-                <i class="fa-solid fa-font-awesome fa-fw"></i>
-            </span>
-            &commat;taxuslor
-        </div>
-        <div>
-            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
-            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
-        </div>
-        
-    </div>
-</footer>
+    
 
-            </div>
-            
-            <transition name="fade">
-                <div id="preview" ref="preview" v-show="previewShow">
-                    <img id="preview-content" ref="previewContent" />
-                </div>
-            </transition>
-            
-        </div>
-        <script src='/js/main.js'></script>
-        
-    </body>
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
 </html>
