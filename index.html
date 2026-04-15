@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>taxuslor</title>
+  <script>
+    // Read saved theme before paint to set initial background & prevent flash
+    window.__savedDark = (function() {
+      var t = localStorage.getItem('theme');
+      if (t === 'light') return false;
+      if (t === 'dark')  return true;
+      return true; // default dark
+    })();
+    document.documentElement.style.background = window.__savedDark ? '#0b0b0b' : '#f0ede8';
+  </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@300;400&display=swap');
 
@@ -200,13 +210,13 @@ const PROJECTS = [
 // ============================================================
 //  THEME — always deep-copy to avoid shared-reference bugs
 // ============================================================
-let isDark = true;
+let isDark = window.__savedDark !== undefined ? window.__savedDark : true;
 
 function freshDark()  { return { bgC: [17,17,17], bgE: [6,6,6],       pt: [255,255,255], ln: [255,255,255], labelL: 80 }; }
 function freshLight() { return { bgC: [242,239,233], bgE: [225,220,210], pt: [0,0,0],       ln: [0,0,0],       labelL: 30 }; }
 
-let theme  = freshDark();
-let target = freshDark();
+let theme  = isDark ? freshDark() : freshLight();
+let target = isDark ? freshDark() : freshLight();
 
 function lerpTheme(speed) {
   const s = speed || 0.045;
@@ -236,6 +246,7 @@ document.getElementById('themeToggle').addEventListener('click', () => {
   if (zoom.active) return;
   isDark = !isDark;
   target = isDark ? freshDark() : freshLight();
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
   syncDomColors();
 });
 
